@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0b; /* page background */
+  --color-surface: #111113; /* cards, navbar */
+  --color-hover: #1a1a1d; /* hover states */
+
+  --color-line: #1f1f23; /* borders, dots */
+  --color-line-strong: #2e2e34;
+
+  --color-text: #f4f4f5; /* headings */
+  --color-muted: #a1a1aa; /* paragraphs */
+  --color-subtle: #6b6b75; /* labels, captions */
+
+  --color-brand: #9d8cff; /* violet accent */
+  --color-brand-hover: #b3a6ff;
+}
+
+@theme inline {
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+/* light theme: add class="light" on <html> */
+.light {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-hover: #f4f4f5;
+  --color-line: #e4e4e7;
+  --color-line-strong: #d4d4d8;
+  --color-text: #0a0a0b;
+  --color-muted: #52525b;
+  --color-subtle: #8a8a94;
+  --color-brand: #6a58d6;
+  --color-brand-hover: #5646b8;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  /* background-image: radial-gradient(var(--color-line) 1px, transparent 1px); */
+  background-size: 20px 20px;
+}
+
+/* ::selection {
+  background: color-mix(in oklab, var(--color-brand) 25%, transparent);
+} */
