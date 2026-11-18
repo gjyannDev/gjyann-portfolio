@@ -3,14 +3,15 @@
   "1": "compilerOptions",
   "2": "card.tsx",
   "3": "components.json",
-  "4": "layout.tsx",
+  "4": "PageIntro",
   "5": "dependencies",
   "6": "devDependencies",
-  "7": "Hero",
-  "8": "tailwind",
-  "9": "scripts",
+  "7": "reveal.tsx",
+  "8": "nav-links.tsx",
+  "9": "site.ts",
   "10": "README.md",
   "11": "AGENTS.md",
   "12": "app_globals",
-  "13": "lib_utils_cn"
+  "13": "lib_utils_cn",
+  "14": "layout.tsx"
 }

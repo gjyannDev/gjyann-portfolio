@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0a0a0b; /* page background */
-  --color-surface: #111113; /* cards, navbar */
-  --color-hover: #1a1a1d; /* hover states */
+  /* Neutral palette: black, white and a gray ramp. No hue anywhere. */
+  --color-bg: #0a0a0a; /* page background */
+  --color-surface: #111111; /* cards, navbar */
+  --color-hover: #1a1a1a; /* hover states */
 
-  --color-line: #1f1f23; /* borders, dots */
-  --color-line-strong: #2e2e34;
+  --color-line: #222222; /* borders */
+  --color-line-strong: #2e2e2e;
 
-  --color-text: #f4f4f5; /* headings */
-  --color-muted: #a1a1aa; /* paragraphs */
-  --color-subtle: #6b6b75; /* labels, captions */
+  --color-text: #f5f5f5; /* headings */
+  --color-muted: #a3a3a3; /* paragraphs */
+  --color-subtle: #7a7a7a; /* labels, captions */
 
-  --color-brand: #9d8cff; /* violet accent */
-  --color-brand-hover: #b3a6ff;
+  /* "brand" = emphasis, not a hue: white on dark, black on light */
+  --color-brand: #fafafa;
+  --color-brand-hover: #ffffff;
 }
 
 @theme inline {
@@ -25,22 +27,78 @@
 .light {
   --color-bg: #fafafa;
   --color-surface: #ffffff;
-  --color-hover: #f4f4f5;
-  --color-line: #e4e4e7;
-  --color-line-strong: #d4d4d8;
-  --color-text: #0a0a0b;
-  --color-muted: #52525b;
-  --color-subtle: #8a8a94;
-  --color-brand: #6a58d6;
-  --color-brand-hover: #5646b8;
+  --color-hover: #f2f2f2;
+  --color-line: #e5e5e5;
+  --color-line-strong: #d4d4d4;
+  --color-text: #0a0a0a;
+  --color-muted: #525252;
+  --color-subtle: #6b6b6b;
+  --color-brand: #0a0a0a;
+  --color-brand-hover: #262626;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  /* background-image: radial-gradient(var(--color-line) 1px, transparent 1px); */
-  background-size: 20px 20px;
 }
+
+/* Background layers (components/layout/background.tsx). */
+:root:not(.light) {
+  --glow-opacity: 0.07; /* soft white light; white needs far less than a tint did */
+  --dot-color: rgb(255 255 255 / 0.09);
+  --grain-opacity: 0.05;
+}
+
+.light {
+  --glow-opacity: 0; /* a dark "glow" on light reads as a smudge */
+  --dot-color: rgb(0 0 0 / 0.1);
+  --grain-opacity: 0.06;
+}
+
+.bg-glow {
+  background: radial-gradient(closest-side, var(--color-brand), transparent);
+  opacity: var(--glow-opacity);
+  filter: blur(60px);
+}
+
+.bg-dots {
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 20%, transparent 75%);
+}
+
+/* Grain: sparse white specks on a transparent tile, so the base stays black. */
+.bg-grain {
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 2.2 0 0 0 -1.0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+.light .bg-grain {
+  filter: invert(1); /* dark specks on the light theme */
+}
+
+/* Film-grain flicker: jump the oversized layer to a new offset each step. */
+@keyframes grain-shift {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-12%, 6%); }
+  30% { transform: translate(8%, -14%); }
+  40% { transform: translate(-6%, 14%); }
+  50% { transform: translate(-12%, 6%); }
+  60% { transform: translate(12%, 0); }
+  70% { transform: translate(0, 12%); }
+  80% { transform: translate(-10%, 8%); }
+  90% { transform: translate(6%, 5%); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bg-grain {
+    animation: grain-shift 0.8s steps(1) infinite;
+    will-change: transform;
+  }
+}
+
 
 /* ::selection {
   background: color-mix(in oklab, var(--color-brand) 25%, transparent);

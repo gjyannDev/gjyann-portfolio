@@ -1,1 +1,1 @@
-export { Hero } from "./hero";
+export { PageIntro } from "./page-intro";
