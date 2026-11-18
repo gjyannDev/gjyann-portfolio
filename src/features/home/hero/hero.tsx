@@ -43,8 +43,8 @@ function Avatar() {
 
 export function Hero() {
   return (
-    <section className="py-24">
-      <Container className="max-w-3xl">
+    <section className="pb-6 pt-24">
+      <Container className="max-w-4xl">
         <div className="flex items-center gap-5 sm:gap-6">
           <Avatar />
           <div className="min-w-0">

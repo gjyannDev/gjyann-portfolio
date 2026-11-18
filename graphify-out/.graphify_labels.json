@@ -1,9 +1,9 @@
 {
   "0": "package.json",
   "1": "compilerOptions",
-  "2": "card.tsx",
+  "2": "about.tsx",
   "3": "components.json",
-  "4": "PageIntro",
+  "4": "experience.tsx",
   "5": "dependencies",
   "6": "devDependencies",
   "7": "reveal.tsx",

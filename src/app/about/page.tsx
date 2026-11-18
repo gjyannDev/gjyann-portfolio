@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { PageIntro } from "@/components/sections";
+import { About } from "@/features/home/about";
 
 export const metadata: Metadata = { title: "About" };
 
 export default function AboutPage() {
-  return <PageIntro title="About" description="Content coming soon." />;
+  return (
+    <div className="pt-12">
+      <About titleAs="h1" />
+    </div>
+  );
 }

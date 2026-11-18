@@ -18,7 +18,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       // next-themes sets the theme class before hydration
       suppressHydrationWarning
-      className={cn("h-full antialiased font-sans", plexSans.variable, plexMono.variable)}
+      className={cn(
+        "h-full antialiased font-sans",
+        plexSans.variable,
+        plexMono.variable,
+      )}
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
