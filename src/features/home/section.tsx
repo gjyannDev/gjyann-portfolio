@@ -9,8 +9,8 @@ type SectionProps = {
   as?: "h1" | "h2";
   /** Optional lead paragraph under the title. */
   description?: string;
-  /** List element for the body: <dl> for InfoRows, <ol> for ordered content. */
-  listAs?: "dl" | "ol";
+  /** Body element: <dl> for InfoRows, <ol> for ordered content, <div> when the body brings its own list. */
+  listAs?: "dl" | "ol" | "div";
   /** Overrides the list styling (default: top divider for InfoRows). */
   listClassName?: string;
   children: React.ReactNode;

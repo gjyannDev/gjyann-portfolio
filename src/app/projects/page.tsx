@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { PageIntro } from "@/components/sections";
+import { Projects } from "@/features/home/projects";
+import { GitHubActivity } from "@/features/home/github";
 
 export const metadata: Metadata = { title: "Projects" };
 
 export default function ProjectsPage() {
-  return <PageIntro title="Projects" description="Content coming soon." />;
+  return (
+    <div className="pt-12">
+      <Projects titleAs="h1" />
+      <GitHubActivity />
+    </div>
+  );
 }

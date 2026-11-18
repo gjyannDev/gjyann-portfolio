@@ -50,9 +50,6 @@ export function Hero() {
           <div className="min-w-0">
             <h1 className="text-2xl font-semibold text-text sm:text-4xl">
               {profile.name}
-              <span className="ml-2 align-middle font-mono text-xs font-normal text-subtle">
-                {profile.version}
-              </span>
             </h1>
             <ul className="mt-3 flex flex-wrap gap-2">
               {profile.tags.map((tag) => (

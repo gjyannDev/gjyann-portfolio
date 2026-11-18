@@ -18,7 +18,6 @@ export type ProfileLink = { label: string; href: string; primary?: boolean };
 export type Profile = {
   name: string;
   handle: string;
-  version: string;
   /** Path in /public. Falls back to initials when unset. */
   avatar?: string;
   tags: string[];
@@ -33,7 +32,6 @@ export type Profile = {
 export const profile: Profile = {
   name: "Mark Ghian Francis",
   handle: "gjyannDev",
-  version: "v1.5",
   tags: ["full-stack", "ai-engineer"],
   experience: "6 months",
   projects: "12 shipped · 4 industries",
