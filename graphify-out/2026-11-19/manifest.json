@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "src/components/layout/footer.tsx": {
-    "mtime": 1794963796.7903976,
-    "seen": 1794963802.3002608,
-    "ast_hash": "694b6182eaeb38f1c84cdb82531ee73e",
+    "mtime": 1795090555.935008,
+    "seen": 1795090560.7475176,
+    "ast_hash": "fd83d72da1324484bffccc55f517c64b",
     "semantic_hash": ""
   },
   "src/components/layout/index.ts": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "src/config/site.ts": {
-    "mtime": 1795084568.4892485,
-    "seen": 1795084574.023928,
-    "ast_hash": "d24c47fff13f79f7583f35f318f1b94f",
+    "mtime": 1795093860.4376738,
+    "seen": 1795093880.407701,
+    "ast_hash": "ab1a787bcb5f464046646982513c87d5",
     "semantic_hash": ""
   },
   "src/lib/fonts.ts": {
@@ -216,15 +216,15 @@
     "semantic_hash": ""
   },
   "src/features/home/hero/hero-info.tsx": {
-    "mtime": 1795084567.408599,
-    "seen": 1795084574.0239446,
-    "ast_hash": "ff0851e23349164867bedc412b5c0110",
+    "mtime": 1795093861.858432,
+    "seen": 1795093880.407733,
+    "ast_hash": "05d957e0fb8e4ea83c2350d4461c0620",
     "semantic_hash": ""
   },
   "src/features/home/hero/hero.tsx": {
-    "mtime": 1794975486.1251745,
-    "seen": 1794975492.3925428,
-    "ast_hash": "5f616e54b4963b83046fba72f07d3e26",
+    "mtime": 1795093862.4936974,
+    "seen": 1795093880.4077356,
+    "ast_hash": "878a81158b5d2c8c6c2962e1861fe566",
     "semantic_hash": ""
   },
   "src/features/home/hero/index.ts": {
@@ -240,15 +240,15 @@
     "semantic_hash": ""
   },
   "src/features/home/about/about.tsx": {
-    "mtime": 1795088501.241971,
-    "seen": 1795088511.7087245,
-    "ast_hash": "5029f99e95df19533aeb0e143971ffc5",
+    "mtime": 1795088575.3015428,
+    "seen": 1795090560.7475395,
+    "ast_hash": "f34622d7007308607d6b84f221e42a8d",
     "semantic_hash": ""
   },
   "src/features/home/about/data.ts": {
-    "mtime": 1795088501.6873631,
-    "seen": 1795088511.7087262,
-    "ast_hash": "af73205463be418e43cd83da75ef0d78",
+    "mtime": 1795090163.7392454,
+    "seen": 1795090560.7475407,
+    "ast_hash": "4910ab737e41ca1288f168985d33879a",
     "semantic_hash": ""
   },
   "src/features/home/about/index.ts": {
@@ -282,9 +282,9 @@
     "semantic_hash": ""
   },
   "src/features/home/experience/data.ts": {
-    "mtime": 1795082400.9090981,
-    "seen": 1795082409.1287568,
-    "ast_hash": "9958ea6130f5f357ee55baea1dd5557f",
+    "mtime": 1795093739.6784608,
+    "seen": 1795093773.0224762,
+    "ast_hash": "72a9d259859db9f793bd818342054673",
     "semantic_hash": ""
   },
   "src/features/home/experience/experience.tsx": {
@@ -312,9 +312,9 @@
     "semantic_hash": ""
   },
   "src/features/home/projects/data.ts": {
-    "mtime": 1795083024.2493906,
-    "seen": 1795083029.1065936,
-    "ast_hash": "a7dfa33d71b4127aea936882a106e82a",
+    "mtime": 1795090237.1441395,
+    "seen": 1795090560.7475576,
+    "ast_hash": "d982afc1c6ac45c68942888dae648eea",
     "semantic_hash": ""
   },
   "src/features/home/projects/index.ts": {
@@ -359,16 +359,34 @@
     "ast_hash": "6bbeb583aea8a2d4ca86290b6c0dc59d",
     "semantic_hash": ""
   },
-  "public/design/Resume.pdf": {
-    "mtime": 1795080541.599488,
-    "seen": 1795081979.989093,
-    "ast_hash": "6f03a05aa5e692b4762b09196d642abb",
-    "semantic_hash": ""
-  },
   "public/design/techstack-inspo.png": {
     "mtime": 1795088394.9460924,
     "seen": 1795088511.7087657,
     "ast_hash": "e3c2497cb6b7949d7422db3126385008",
+    "semantic_hash": ""
+  },
+  "public/pdf/mark-ghian-resume.pdf": {
+    "mtime": 1795080541.599488,
+    "seen": 1795090560.7475724,
+    "ast_hash": "6f03a05aa5e692b4762b09196d642abb",
+    "semantic_hash": ""
+  },
+  "src/features/home/hero/hero-client.tsx": {
+    "mtime": 1795093861.163757,
+    "seen": 1795093880.407731,
+    "ast_hash": "4c6a08d29c856f110e59423788aa1aff",
+    "semantic_hash": ""
+  },
+  "public/design/hero-inspo.png": {
+    "mtime": 1795092057.6052995,
+    "seen": 1795092502.7308574,
+    "ast_hash": "8347c3e94953e15e17d58787e4fcc9c6",
+    "semantic_hash": ""
+  },
+  "src/features/home/hero/moon-scene.ts": {
+    "mtime": 1795093556.7991683,
+    "seen": 1795093585.6344104,
+    "ast_hash": "f46a075ff31d511b1597af38122efb92",
     "semantic_hash": ""
   }
 }

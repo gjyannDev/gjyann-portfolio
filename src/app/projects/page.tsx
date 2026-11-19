@@ -6,9 +6,9 @@ export const metadata: Metadata = { title: "Projects" };
 
 export default function ProjectsPage() {
   return (
-    <div className="pt-12">
+    <>
       <Projects titleAs="h1" />
       <GitHubActivity />
-    </div>
+    </>
   );
 }

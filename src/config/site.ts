@@ -21,27 +21,23 @@ export type Profile = {
   /** Path in /public. Falls back to initials when unset. */
   avatar?: string;
   tags: string[];
-  experience: string;
   location: string;
+  /** IANA zone for the live clock in the location row, plus its short label. */
+  timeZone: { id: string; label: string };
   status: { label: string; available: boolean };
   links: ProfileLink[];
 };
 
-// TODO: replace placeholders with real values.
 export const profile: Profile = {
   name: "Mark Ghian Francis",
   handle: "gjyannDev",
   tags: ["full-stack", "ai-engineer"],
-  experience: "6 months",
-  location: "Philippines · UTC+8",
+  location: "Philippines",
+  timeZone: { id: "Asia/Manila", label: "UTC+8" },
   status: { label: "Open to work", available: true },
   links: [
     { label: "github", href: "https://github.com/gjyannDev" },
-    {
-      label: "linkedin",
-      href: "https://www.linkedin.com/in/gjyanndev/",
-      primary: true,
-    },
-    { label: "resume", href: "/pdf/mark-ghian-resume.pdf" },
+    { label: "linkedin", href: "https://www.linkedin.com/in/gjyanndev/" },
+    { label: "resume", href: "/pdf/mark-ghian-resume.pdf", primary: true },
   ],
 };

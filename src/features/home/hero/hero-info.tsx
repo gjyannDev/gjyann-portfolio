@@ -1,6 +1,7 @@
 import { profile, type ProfileLink } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { InfoRow, StatusDot } from "../section";
+import { LocalTime } from "./hero-client";
 
 function Links({ links }: { links: ProfileLink[] }) {
   return (
@@ -30,12 +31,14 @@ function Links({ links }: { links: ProfileLink[] }) {
 }
 
 /** Spec-sheet style table of profile facts. */
-export function HeroInfo() {
+export function HeroInfo({ experience }: { experience: string }) {
   return (
     <dl className="mt-10 border-t border-line">
       <InfoRow label="developer">{profile.handle}</InfoRow>
-      <InfoRow label="experience">{profile.experience}</InfoRow>
-      <InfoRow label="location">{profile.location}</InfoRow>
+      <InfoRow label="experience">{experience}</InfoRow>
+      <InfoRow label="location">
+        {profile.location} · <LocalTime />
+      </InfoRow>
       <InfoRow label="status">
         <StatusDot active={profile.status.available}>
           {profile.status.label}

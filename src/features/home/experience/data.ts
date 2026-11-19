@@ -127,15 +127,22 @@ function currentMonth(now: Date) {
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 }
 
-/** Inclusive month count, LinkedIn-style: "4 mos", "1 yr 2 mos". */
-export function formatDuration(
-  start: string,
-  end: string | undefined,
-  now: Date,
-) {
+/** Inclusive month count from start to end (or the current month). */
+function monthsBetween(start: string, end: string | undefined, now: Date) {
   const a = parse(start);
   const b = parse(end ?? currentMonth(now));
-  const total = (b.y - a.y) * 12 + (b.m - a.m) + 1;
+  return (b.y - a.y) * 12 + (b.m - a.m) + 1;
+}
+
+/** Months worked across every role; gaps between roles don't count. */
+export function totalExperienceMonths(now: Date) {
+  return companies
+    .flatMap((c) => c.roles)
+    .reduce((sum, r) => sum + monthsBetween(r.start, r.end, now), 0);
+}
+
+/** Month count, LinkedIn-style: "4 mos", "1 yr 2 mos". */
+export function formatMonths(total: number) {
   const yrs = Math.floor(total / 12);
   const mos = total % 12;
   const parts = [
@@ -143,6 +150,15 @@ export function formatDuration(
     mos && `${mos} mo${mos > 1 ? "s" : ""}`,
   ].filter(Boolean);
   return parts.join(" ") || "1 mo";
+}
+
+/** Inclusive duration of one role, e.g. "3 mos". */
+export function formatDuration(
+  start: string,
+  end: string | undefined,
+  now: Date,
+) {
+  return formatMonths(monthsBetween(start, end, now));
 }
 
 /** Span of all roles: oldest start → newest end (or present). */

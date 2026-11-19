@@ -3,7 +3,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { plexSans, plexMono } from "@/lib/fonts";
 import { siteConfig } from "@/config/site";
-import { Header, Footer, Background } from "@/components/layout";
+import { Header, Footer, Background, MoonSky } from "@/components/layout";
 import { MotionProvider } from "@/components/motion";
 import { ThemeProvider } from "@/components/theme";
 
@@ -29,6 +29,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Background />
           <MotionProvider>
             <Header />
+            {/* Shared night sky; stays mounted across page navigation. */}
+            <MoonSky />
             <main className="flex-1">{children}</main>
             <Footer />
           </MotionProvider>

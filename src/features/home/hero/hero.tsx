@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/layout";
 import { profile } from "@/config/site";
+import { formatMonths, totalExperienceMonths } from "../experience/data";
 import { HeroInfo } from "./hero-info";
 
 function initials(name: string) {
@@ -13,13 +14,13 @@ function initials(name: string) {
 /** Photo if `profile.avatar` is set, otherwise initials on a dotted tile. */
 function Avatar() {
   return (
-    <div className="relative size-20 shrink-0 overflow-hidden rounded-xl border border-line-strong bg-surface sm:size-24">
+    <div className="relative size-24 shrink-0 overflow-hidden rounded-xl border border-line-strong bg-surface sm:size-32">
       {profile.avatar ? (
         <Image
           src={profile.avatar}
           alt={profile.name}
           fill
-          sizes="96px"
+          sizes="128px"
           priority
           className="object-cover"
         />
@@ -31,7 +32,7 @@ function Avatar() {
           />
           <span
             aria-hidden
-            className="relative flex h-full items-center justify-center text-2xl font-medium tracking-wide text-text sm:text-3xl"
+            className="relative flex h-full items-center justify-center text-3xl font-medium tracking-wide text-text sm:text-4xl"
           >
             {initials(profile.name)}
           </span>
@@ -41,9 +42,13 @@ function Avatar() {
   );
 }
 
-export function Hero() {
+export async function Hero() {
+  "use cache";
+  // Total months across all roles, from the experience data, e.g. "1 yr 7 mos".
+  const experience = formatMonths(totalExperienceMonths(new Date()));
+
   return (
-    <section className="pb-6 pt-24">
+    <section className="pb-6">
       <Container className="max-w-4xl">
         <div className="flex items-center gap-5 sm:gap-6">
           <Avatar />
@@ -64,7 +69,7 @@ export function Hero() {
           </div>
         </div>
 
-        <HeroInfo />
+        <HeroInfo experience={experience} />
       </Container>
     </section>
   );
