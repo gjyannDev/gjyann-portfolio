@@ -1,9 +1,9 @@
 // TODO: replace placeholders with real values.
 export const about = {
   summary:
-    "I'm a full-stack engineer who loves building AI and SaaS products end to end, from frontend and backend to DevOps. I care about reliable systems and intuitive user experiences, and I thrive in fast-moving teams.",
-  focus: "Generative AI, multi-tenant SaaS",
-  currently: "Building an AI-powered platform",
+    "Full-stack engineer who enjoys the whole product lifecycle: designing intuitive UIs, building robust and scalable APIs, and writing clean, readable, well-tested code that holds up in production. I'm drawn to AI and SaaS, and I work best in fast-moving teams that value ownership.",
+  focus: "Generative AI, LLM Applications, Multi-Tenant SaaS",
+  currently: "Going deeper into LLM applications and agentic AI",
   basedIn: "Philippines · open to remote",
 };
 
@@ -13,51 +13,88 @@ export type StackGroup = { label: string; items: StackItem[] };
 /** `primary` = main tools, shown highlighted. */
 export const stack: StackGroup[] = [
   {
-    label: "languages",
+    label: "Frontend",
     items: [
       { name: "TypeScript", primary: true },
-      { name: "Python", primary: true },
-      { name: "SQL" },
-    ],
-  },
-  {
-    label: "frontend",
-    items: [
+      { name: "JavaScript" },
       { name: "Next.js", primary: true },
       { name: "React" },
-      { name: "Tailwind" },
-      { name: "Three.js" },
+      { name: "React Native", primary: true },
+      { name: "Expo" },
+      { name: "NativeWind" },
+      { name: "React Native Reusables" },
+      { name: "Vue" },
+      { name: "Tailwind CSS" },
+      { name: "SCSS" },
+      { name: "Styled Components" },
+      { name: "shadcn/ui" },
+      { name: "Framer Motion" },
+      { name: "Vite" },
+      { name: "Webpack" },
+      { name: "ESLint" },
+      { name: "Prettier" },
     ],
   },
   {
-    label: "backend",
+    label: "Backend",
     items: [
-      { name: "Node.js" },
+      { name: "Python", primary: true },
+      { name: "PHP" },
+      { name: "SQL" },
       { name: "FastAPI", primary: true },
-      { name: "Prisma" },
-      { name: "tRPC" },
+      { name: "Laravel" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "REST APIs" },
+      { name: "JWT" },
+      { name: "Redis" },
+      { name: "Agenda" },
     ],
   },
   {
-    label: "ai",
+    label: "AI & LLM",
     items: [
-      { name: "LLM APIs", primary: true },
+      { name: "LLM Integration", primary: true },
       { name: "RAG" },
-      { name: "Agents" },
-      { name: "Vector DBs" },
+      { name: "AI Agents" },
+      { name: "MCP" },
+      { name: "Langfuse" },
+      { name: "Deepgram" },
+      { name: "Claude Code" },
+      { name: "Codex" },
+      { name: "Google AI Studio" },
     ],
   },
   {
-    label: "data",
-    items: [{ name: "PostgreSQL" }, { name: "Redis" }, { name: "Supabase" }],
+    label: "Databases",
+    items: [
+      { name: "PostgreSQL" },
+      { name: "MySQL" },
+      { name: "MongoDB" },
+      { name: "Supabase" },
+    ],
   },
   {
-    label: "infra",
+    label: "Cloud & DevOps",
     items: [
       { name: "Docker" },
       { name: "GitHub Actions" },
+      { name: "CI/CD" },
+      { name: "Vercel" },
       { name: "Cloudflare" },
-      { name: "GCP" },
+      { name: "VPS" },
+    ],
+  },
+  {
+    label: "Tools",
+    items: [
+      { name: "WordPress" },
+      { name: "Payload CMS" },
+      { name: "Figma" },
+      { name: "Postman" },
+      { name: "Swagger" },
+      { name: "k6" },
+      { name: "Zeplin" },
     ],
   },
 ];

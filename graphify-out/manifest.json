@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "src/components/layout/footer.tsx": {
-    "mtime": 1794963796.7903976,
-    "seen": 1794963802.3002608,
-    "ast_hash": "694b6182eaeb38f1c84cdb82531ee73e",
+    "mtime": 1795090555.935008,
+    "seen": 1795090560.7475176,
+    "ast_hash": "fd83d72da1324484bffccc55f517c64b",
     "semantic_hash": ""
   },
   "src/components/layout/index.ts": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "src/config/site.ts": {
-    "mtime": 1794975486.770234,
-    "seen": 1794975492.3925302,
-    "ast_hash": "083333f63b5c55ae950a02e58a786cd8",
+    "mtime": 1795090553.304726,
+    "seen": 1795090560.7475379,
+    "ast_hash": "2dca63bca1e9233e4f18e1cfa5dee695",
     "semantic_hash": ""
   },
   "src/lib/fonts.ts": {
@@ -168,8 +168,8 @@
     "semantic_hash": ""
   },
   "src/components/layout/header/nav-links.tsx": {
-    "mtime": 1794974497.4554026,
-    "seen": 1794974516.2167554,
+    "mtime": 1795050955.9162824,
+    "seen": 1795081979.989046,
     "ast_hash": "bf1b1eb9057ec5d2f0ea640812a36733",
     "semantic_hash": ""
   },
@@ -186,9 +186,9 @@
     "semantic_hash": ""
   },
   "src/components/theme/theme-toggle.tsx": {
-    "mtime": 1794974325.7121134,
-    "seen": 1794974342.235753,
-    "ast_hash": "4994a4bbe7c858be1b884a007995e713",
+    "mtime": 1795083791.3512173,
+    "seen": 1795083804.0891283,
+    "ast_hash": "a56879ae763729d166db8c108ad5bf0d",
     "semantic_hash": ""
   },
   "src/app/about/page.tsx": {
@@ -216,9 +216,9 @@
     "semantic_hash": ""
   },
   "src/features/home/hero/hero-info.tsx": {
-    "mtime": 1794963170.7786543,
-    "seen": 1794963188.6392226,
-    "ast_hash": "51c8adfc444b81d542097f0d0f0770fc",
+    "mtime": 1795090554.2156353,
+    "seen": 1795090560.7475538,
+    "ast_hash": "bc88e8515b741a0c43b17b36524af1b3",
     "semantic_hash": ""
   },
   "src/features/home/hero/hero.tsx": {
@@ -240,15 +240,15 @@
     "semantic_hash": ""
   },
   "src/features/home/about/about.tsx": {
-    "mtime": 1794973757.0604358,
-    "seen": 1794973776.128966,
-    "ast_hash": "423566a48d208e93aeaf754d1e0a64f6",
+    "mtime": 1795088575.3015428,
+    "seen": 1795090560.7475395,
+    "ast_hash": "f34622d7007308607d6b84f221e42a8d",
     "semantic_hash": ""
   },
   "src/features/home/about/data.ts": {
-    "mtime": 1794963180.4199257,
-    "seen": 1794963188.6392195,
-    "ast_hash": "0ce8392b553ce6a54365046e39e8e55e",
+    "mtime": 1795090163.7392454,
+    "seen": 1795090560.7475407,
+    "ast_hash": "4910ab737e41ca1288f168985d33879a",
     "semantic_hash": ""
   },
   "src/features/home/about/index.ts": {
@@ -282,15 +282,15 @@
     "semantic_hash": ""
   },
   "src/features/home/experience/data.ts": {
-    "mtime": 1794973726.633122,
-    "seen": 1794973776.1289704,
-    "ast_hash": "873b04d037db2c1af98b936f80db1c35",
+    "mtime": 1795082400.9090981,
+    "seen": 1795082409.1287568,
+    "ast_hash": "9958ea6130f5f357ee55baea1dd5557f",
     "semantic_hash": ""
   },
   "src/features/home/experience/experience.tsx": {
-    "mtime": 1794973718.6683917,
-    "seen": 1794973776.1289716,
-    "ast_hash": "e1a7b50f9d46753ad5b84ac1cac61992",
+    "mtime": 1795083623.628579,
+    "seen": 1795083804.089141,
+    "ast_hash": "44b7d6b7938b1487ef34bab40df1830c",
     "semantic_hash": ""
   },
   "src/features/home/experience/index.ts": {
@@ -312,9 +312,9 @@
     "semantic_hash": ""
   },
   "src/features/home/projects/data.ts": {
-    "mtime": 1794974901.3873422,
-    "seen": 1794974930.8422496,
-    "ast_hash": "e833dfdb19bbfcb68e55e48941e7dd64",
+    "mtime": 1795090237.1441395,
+    "seen": 1795090560.7475576,
+    "ast_hash": "d982afc1c6ac45c68942888dae648eea",
     "semantic_hash": ""
   },
   "src/features/home/projects/index.ts": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "src/features/home/projects/project-list.tsx": {
-    "mtime": 1794975074.8994045,
-    "seen": 1794975492.3925474,
-    "ast_hash": "e76cbf3be4ab46f12414fa5d7840e214",
+    "mtime": 1795081974.1253233,
+    "seen": 1795081979.9890816,
+    "ast_hash": "4b0f6b557f5cc2b35f8fd972a0089bed",
     "semantic_hash": ""
   },
   "src/features/home/projects/projects.tsx": {
@@ -357,6 +357,18 @@
     "mtime": 1794975865.181155,
     "seen": 1794975950.649575,
     "ast_hash": "6bbeb583aea8a2d4ca86290b6c0dc59d",
+    "semantic_hash": ""
+  },
+  "public/design/techstack-inspo.png": {
+    "mtime": 1795088394.9460924,
+    "seen": 1795088511.7087657,
+    "ast_hash": "e3c2497cb6b7949d7422db3126385008",
+    "semantic_hash": ""
+  },
+  "public/pdf/mark-ghian-resume.pdf": {
+    "mtime": 1795080541.599488,
+    "seen": 1795090560.7475724,
+    "ast_hash": "6f03a05aa5e692b4762b09196d642abb",
     "semantic_hash": ""
   }
 }

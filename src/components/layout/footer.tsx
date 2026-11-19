@@ -13,14 +13,13 @@ export async function Footer() {
           </p>
           <ul className="flex flex-wrap gap-x-4 gap-y-1">
             {profile.links.map(({ label, href }) => {
-              const external = href.startsWith("http");
+              // External sites and PDFs open in a new tab.
+              const newTab = href.startsWith("http") || href.endsWith(".pdf");
               return (
                 <li key={label}>
                   <a
                     href={href}
-                    {...(external
-                      ? { target: "_blank", rel: "noreferrer" }
-                      : {})}
+                    {...(newTab ? { target: "_blank", rel: "noreferrer" } : {})}
                     className="rounded-sm transition-colors hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand/40"
                   >
                     {label} <span aria-hidden>↗</span>

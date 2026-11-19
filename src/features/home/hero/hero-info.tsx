@@ -6,12 +6,13 @@ function Links({ links }: { links: ProfileLink[] }) {
   return (
     <ul className="flex flex-wrap gap-x-4 gap-y-1 font-mono text-sm">
       {links.map(({ label, href, primary }) => {
-        const external = href.startsWith("http");
+        // External sites and PDFs open in a new tab.
+        const newTab = href.startsWith("http") || href.endsWith(".pdf");
         return (
           <li key={label}>
             <a
               href={href}
-              {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+              {...(newTab ? { target: "_blank", rel: "noreferrer" } : {})}
               className={cn(
                 "rounded-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand/40",
                 primary
@@ -34,7 +35,6 @@ export function HeroInfo() {
     <dl className="mt-10 border-t border-line">
       <InfoRow label="developer">{profile.handle}</InfoRow>
       <InfoRow label="experience">{profile.experience}</InfoRow>
-      <InfoRow label="projects">{profile.projects}</InfoRow>
       <InfoRow label="location">{profile.location}</InfoRow>
       <InfoRow label="status">
         <StatusDot active={profile.status.available}>

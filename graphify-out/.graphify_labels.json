@@ -5,14 +5,14 @@
   "3": "components.json",
   "4": "experience.tsx",
   "5": "dependencies",
-  "6": "section.tsx",
-  "7": "reveal.tsx",
-  "8": "nav-links.tsx",
+  "6": "site.ts",
+  "7": "layout.tsx",
+  "8": "theme-toggle.tsx",
   "9": "github.tsx",
   "10": "README.md",
   "11": "AGENTS.md",
   "12": "app_globals",
   "13": "lib_utils_cn",
-  "14": "layout.tsx",
+  "14": "nav-links.tsx",
   "15": "project-list.tsx"
 }

@@ -22,7 +22,6 @@ export type Profile = {
   avatar?: string;
   tags: string[];
   experience: string;
-  projects: string;
   location: string;
   status: { label: string; available: boolean };
   links: ProfileLink[];
@@ -34,7 +33,6 @@ export const profile: Profile = {
   handle: "gjyannDev",
   tags: ["full-stack", "ai-engineer"],
   experience: "6 months",
-  projects: "12 shipped · 4 industries",
   location: "Philippines · UTC+8",
   status: { label: "Open to work", available: true },
   links: [
@@ -44,6 +42,6 @@ export const profile: Profile = {
       href: "https://www.linkedin.com/in/gjyanndev/",
       primary: true,
     },
-    { label: "resume", href: "/resume.pdf" },
+    { label: "resume", href: "/pdf/mark-ghian-resume.pdf" },
   ],
 };

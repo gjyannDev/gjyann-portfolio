@@ -31,12 +31,7 @@ function RoleItem({
         />
       )}
       <h4 className="font-medium text-text">{role.title}</h4>
-      <p
-        className={cn(
-          "mt-0.5 font-mono text-xs uppercase tracking-wide",
-          current ? "text-text" : "text-subtle",
-        )}
-      >
+      <p className={cn("mt-0.5 text-sm", current ? "text-text" : "text-muted")}>
         {formatMonth(role.start)} – {formatMonth(role.end)} ·{" "}
         {formatDuration(role.start, role.end, now)}
       </p>
@@ -76,11 +71,9 @@ function CompanyItem({
         <h3 className="text-lg font-semibold leading-10 text-text">
           {company.name}
         </h3>
-        <p className="-mt-1 font-mono text-xs text-subtle">
-          {meta.join(" · ")}
-        </p>
+        <p className="-mt-1 text-sm text-muted">{meta.join(" · ")}</p>
         {company.location && (
-          <p className="font-mono text-xs text-subtle">{company.location}</p>
+          <p className="mt-0.5 text-sm text-muted">{company.location}</p>
         )}
         <ol className="mt-5 space-y-7">
           {company.roles.map((role) => (

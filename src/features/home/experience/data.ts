@@ -1,6 +1,5 @@
-// TODO: replace placeholders with real values.
 export const intro =
-  "Building across AI engineering and full-stack development, from internal platforms to products shipped for startups.";
+  "Building across full-stack web, mobile and AI, from internal business systems to an AI-powered CRM shipped on iOS and Android.";
 
 export type Role = {
   title: string;
@@ -24,61 +23,72 @@ export type Company = {
 /** Newest first, both companies and roles. */
 export const companies: Company[] = [
   {
-    name: "Company One",
-    badge: "C1",
+    name: "Appquant Technologies Inc.",
+    badge: "AQ",
     type: "Full-time",
+    location: "Makati City, Philippines",
     roles: [
       {
-        title: "Lead AI Engineer",
-        start: "2025-08",
+        title: "Software Developer",
+        start: "2026-09",
+        end: "2026-11",
         summary:
-          "Driving AI initiatives and system-level solutions across key areas of the business, focused on scalable and secure delivery.",
+          "Built Moonbreak's React Native app end to end, an AI-powered CRM with RevenueCat payments and an AI agent chat, extended its mobile API layer, and shipped release builds to TestFlight and Google Play internal testing.",
+        skills: ["React Native", "Expo", "Next.js", "RevenueCat", "AI Agents"],
+      },
+    ],
+  },
+  {
+    name: "Richtek Solutions Inc.",
+    badge: "RS",
+    type: "Full-time",
+    location: "San Juan City, Philippines",
+    roles: [
+      {
+        title: "Junior Full Stack Developer",
+        start: "2026-06",
+        end: "2026-08",
+        summary:
+          "Developed full-stack features with Laravel, Next.js and MySQL, and built Docker dev environments and CI/CD pipelines automating unit, integration, end-to-end, performance, SAST and AI security testing.",
         skills: [
-          "Generative AI",
-          "LLM APIs",
-          "Python",
-          "FastAPI",
-          "PostgreSQL",
+          "Laravel",
+          "Next.js",
+          "Tailwind CSS",
+          "MySQL",
+          "Docker",
+          "CI/CD",
+        ],
+      },
+      {
+        title: "Full Stack Developer Intern",
+        start: "2026-03",
+        end: "2026-05",
+        summary:
+          "Built full-stack features with Laravel, Next.js and MySQL, created responsive sites and content workflows with WordPress, Elementor and Payload CMS, and debugged application issues to improve stability and user experience.",
+        skills: [
+          "Laravel",
+          "Next.js",
+          "Tailwind CSS",
+          "MySQL",
+          "WordPress",
+          "Payload CMS",
         ],
       },
     ],
   },
   {
-    name: "Company Two",
-    badge: "C2",
-    type: "Full-time",
-    location: "Makati, Philippines · Hybrid",
+    name: "JFE Techno Manila Inc.",
+    badge: "JFE",
+    type: "Internship",
+    location: "Ortigas City, Philippines",
     roles: [
       {
-        title: "AI Ops Engineer",
+        title: "Software Engineer Intern",
         start: "2025-02",
-        end: "2025-08",
+        end: "2025-11",
         summary:
-          "Pioneered the GenAI centre of excellence to deliver scalable AI solutions, with CI/CD pipelines and centralized observability.",
-        skills: ["AWS", "Docker", "RAG"],
-      },
-      {
-        title: "Software Engineer",
-        start: "2024-06",
-        end: "2025-02",
-        summary:
-          "Built internal tools and APIs used by support and operations teams.",
-        skills: ["Next.js", "Node.js", "PostgreSQL"],
-      },
-    ],
-  },
-  {
-    name: "Freelance",
-    badge: "FL",
-    type: "Self-employed",
-    roles: [
-      {
-        title: "Full-stack Developer",
-        start: "2020-01",
-        end: "2024-05",
-        summary:
-          "Shipped products for startups, from landing pages to multi-tenant SaaS platforms.",
-        skills: ["React", "Next.js", "Tailwind", "Supabase"],
+          "Built core workflows, backend logic and database integration for the company's internal MBI system, working in an Agile team through sprint planning, stand-ups and backlog refinement.",
+        skills: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy"],
       },
     ],
   },

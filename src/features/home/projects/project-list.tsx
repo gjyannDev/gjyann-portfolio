@@ -82,22 +82,26 @@ function Row({ project, number }: { project: Project; number: number }) {
             <Chip key={tech}>{tech}</Chip>
           ))}
         </ul>
-        <ul className="mt-4 flex gap-4 font-mono text-sm">
-          {project.links.map(({ label, href }) => {
-            const external = href.startsWith("http");
-            return (
-              <li key={label}>
-                <a
-                  href={href}
-                  {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-                  className="rounded-sm text-brand transition-colors hover:text-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand/40"
-                >
-                  {label} <span aria-hidden>↗</span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        {project.links.length > 0 && (
+          <ul className="mt-4 flex gap-4 font-mono text-sm">
+            {project.links.map(({ label, href }) => {
+              const external = href.startsWith("http");
+              return (
+                <li key={label}>
+                  <a
+                    href={href}
+                    {...(external
+                      ? { target: "_blank", rel: "noreferrer" }
+                      : {})}
+                    className="rounded-sm text-brand transition-colors hover:text-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand/40"
+                  >
+                    {label} <span aria-hidden>↗</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
 
       <Thumb project={project} />

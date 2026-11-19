@@ -124,6 +124,14 @@ body {
   }
 }
 
+/* Theme switch: the circular reveal is driven from theme-toggle.tsx,
+   so turn off the default cross-fade of the view transition. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
 /* ::selection {
   background: color-mix(in oklab, var(--color-brand) 25%, transparent);
 } */

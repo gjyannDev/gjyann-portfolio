@@ -1,8 +1,7 @@
-// TODO: replace placeholders with real projects.
 export const intro =
-  "Products and platforms I've designed and shipped, spanning AI tools, SaaS and consumer apps.";
+  "Products and platforms I've built and shipped, spanning AI tools, mobile apps and e-commerce.";
 
-export const PROJECT_TYPES = ["company", "personal"] as const;
+export const PROJECT_TYPES = ["company", "personal", "academic"] as const;
 export type ProjectType = (typeof PROJECT_TYPES)[number];
 
 export type Project = {
@@ -20,52 +19,103 @@ export type Project = {
 /** Newest first. Numbers (01, 02…) follow this order. */
 export const projects: Project[] = [
   {
-    title: "Career AI Platform",
-    year: 2025,
-    type: "company",
-    summary:
-      "An AI-powered career and education platform with interactive work simulations, voice interview practice and automated job discovery.",
-    stack: ["Next.js", "Prisma", "Inngest", "Voice AI", "LLM"],
-    links: [{ label: "live", href: "https://example.com" }],
-  },
-  {
-    title: "Creative Studio",
-    year: 2025,
-    type: "company",
-    featured: true,
-    summary:
-      "An AI creative studio with guided workflows for generating images, video and audio, with centralized prompt and asset management.",
-    stack: ["Next.js", "Supabase", "Trigger.dev", "Cloudflare"],
-    links: [{ label: "live", href: "https://example.com" }],
-  },
-  {
-    title: "All-in-one Toolkit",
-    year: 2024,
+    title: "Cuewise – AI Mock Interviewer",
+    year: 2026,
     type: "personal",
     summary:
-      "A personal toolkit that brings together the tools I use daily for life and work.",
-    stack: ["React", "Tailwind", "Supabase"],
+      "A voice-enabled AI mock interviewer that uses RAG to run resume-aware interviews tailored to a target job, with Deepgram speech-to-text and text-to-speech and Langfuse for LLM evaluation and tracing.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "FastAPI",
+      "RAG",
+      "Deepgram",
+      "Langfuse",
+      "AI Elements",
+    ],
     links: [
-      { label: "live", href: "https://example.com" },
-      { label: "source", href: "https://github.com/" },
+      { label: "source", href: "https://github.com/gjyannDev/cuewise-be" },
     ],
   },
   {
-    title: "Support Copilot",
-    year: 2024,
+    title: "Moonbreak – AI Powered CRM (Web)",
+    year: 2026,
     type: "company",
+    featured: true,
     summary:
-      "An internal assistant that drafts replies for support agents using RAG over the help center and past tickets.",
-    stack: ["FastAPI", "PostgreSQL", "RAG", "LLM APIs"],
-    links: [{ label: "live", href: "https://example.com" }],
+      "The Moonbreak web platform, an AI-powered CRM where an AI agent handles everyday sales work: AI-assisted calls, AI chat over customer data, quotation generation, and contact and deal management, with Langfuse tracing to monitor agent behavior.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "AI Agents",
+      "LLM Integration",
+      "Langfuse",
+      "ElevenLabs",
+      "Stripe",
+      "Vercel",
+    ],
+    links: [{ label: "live", href: "https://www.moonbreak.com/" }],
   },
   {
-    title: "Habit Tracker",
-    year: 2023,
+    title: "Moonbreak – AI Powered CRM (Mobile)",
+    year: 2026,
+    type: "company",
+    summary:
+      "The Moonbreak mobile app, built end to end in React Native, bringing the CRM's AI agent chat to iOS and Android with RevenueCat in-app payments and builds shipped to TestFlight and Google Play.",
+    stack: ["React Native", "Expo", "RevenueCat", "AI Agents", "Langfuse"],
+    links: [{ label: "live", href: "https://www.moonbreak.com/" }],
+  },
+  {
+    title: "MTG Rider Mobile Application",
+    year: 2025,
+    type: "academic",
+    summary:
+      "A mobile app for delivery riders to scan orders, view assigned deliveries and manage order status on the go.",
+    stack: [
+      "React Native",
+      "NativeWind",
+      "React Native Reusables",
+      "Express.js",
+    ],
+    links: [
+      { label: "source", href: "https://github.com/gjyannDev/mtgmeal-mobile" },
+    ],
+  },
+  {
+    title: "Full-Stack Meal Plan E-commerce Platform",
+    year: 2025,
+    type: "academic",
+    summary:
+      "A meal plan ordering platform with a customer storefront and an admin dashboard for managing subscriptions, orders, inventory and rider tracking, with payments through PayMongo.",
+    stack: [
+      "React",
+      "TanStack",
+      "Zustand",
+      "Express.js",
+      "MongoDB",
+      "Agenda",
+      "DigitalOcean",
+      "PayMongo",
+    ],
+    links: [
+      {
+        label: "source",
+        href: "https://github.com/gjyannDev/mtgmeal-backend",
+      },
+    ],
+  },
+  {
+    title: "ReliefX – Volunteer Management System UI/UX Design",
+    year: 2025,
     type: "personal",
     summary:
-      "A minimal habit tracker with streaks, reminders and an offline-first sync engine.",
-    stack: ["Next.js", "Drizzle", "SQLite"],
-    links: [{ label: "source", href: "https://github.com/" }],
+      "A UI/UX design for a volunteer management system, built in Figma, where I sharpened my skills in user flows, wireframing, prototyping and interface design.",
+    stack: ["Figma", "UI/UX Design", "Prototyping"],
+    links: [
+      {
+        label: "behance",
+        href: "https://www.behance.net/gallery/217078153/ReliefX-Volunteer-Management-System-UI-UX-Design",
+      },
+    ],
   },
 ];
