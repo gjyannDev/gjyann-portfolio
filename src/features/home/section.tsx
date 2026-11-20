@@ -50,7 +50,7 @@ export function Section({
   );
 }
 
-/** One label/value row. Must sit inside a <dl>. */
+/** One label/value row: label above the value on phones, beside it from sm. Must sit inside a <dl>. */
 export function InfoRow({
   label,
   children,
@@ -59,7 +59,7 @@ export function InfoRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-b border-line py-3.5 sm:grid-cols-[8rem_1fr]">
+    <div className="grid gap-1 border-b border-line py-3.5 sm:grid-cols-[8rem_1fr] sm:items-baseline sm:gap-4">
       <dt className="font-mono text-xs text-subtle">{label}</dt>
       <dd className="min-w-0 text-sm leading-relaxed text-muted sm:text-base">
         {children}

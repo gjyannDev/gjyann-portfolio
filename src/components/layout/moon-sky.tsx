@@ -17,15 +17,16 @@ const useHour = () =>
 /** CSS px per dither cell (rounded to whole device pixels at draw time). */
 const CELL = 2;
 
-/** Moon placement in CSS px; matches the sky's h-72 / sm:h-88. */
+/** Moon placement in CSS px; matches the sky's h-64 / sm:h-88. */
 function layout(width: number) {
   const sm = width >= 640;
-  return { cx: width / 2, cy: sm ? 188 : 156, r: sm ? 76 : 56 };
+  return { cx: width / 2, cy: sm ? 188 : 148, r: sm ? 76 : 46 };
 }
 
 /**
- * Dithered night sky at the top of every page: today's moon phase with real
- * maria, a halo, drifting cloud bands and stars (see moon-scene.ts).
+ * Dithered sky at the top of every page (see moon-scene.ts): at night
+ * (dark theme) today's moon phase with real maria, a halo and stars; by day
+ * (light theme) an ink-sketch sun. Both: drifting clouds and shooting stars.
  * Rendered once in the root layout, so it stays mounted across navigation.
  * - Scroll: layers sink at different rates (depth) and the sky fades out.
  * - Cursor: layers shift a few px, nearer ones more (fine pointers only).
@@ -186,7 +187,7 @@ export function MoonSky() {
       ref={wrapRef}
       aria-hidden
       // Pulled up under the sticky nav; the shader fades the sky into the page.
-      className="pointer-events-none relative -mt-20 h-72 overflow-hidden sm:h-88"
+      className="pointer-events-none relative -mt-20 h-64 overflow-hidden sm:h-88"
     >
       <div
         ref={stageRef}
@@ -200,7 +201,10 @@ export function MoonSky() {
           ref={labelRef}
           className="absolute left-0 top-0 whitespace-nowrap font-mono text-[11px] text-muted"
         >
-          {moon && `${moon.name} · ${Math.round(moon.illumination * 100)}%`}
+          {/* The phase label belongs to the moon, so it's night only. */}
+          {moon &&
+            dark &&
+            `${moon.name} · ${Math.round(moon.illumination * 100)}%`}
         </p>
       </div>
     </div>

@@ -17,7 +17,8 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
       variant="ghost"
       size="sm"
       className={cn(
-        "h-9 rounded-full px-3 text-[13px] sm:px-4 sm:text-sm",
+        // Tighter on phones so the pill fits a 320px screen.
+        "h-9 rounded-full px-2 text-xs min-[360px]:px-2.5 min-[360px]:text-[13px] sm:px-4 sm:text-sm",
         // Simple CSS fade between links; no measured/sliding pill.
         "transition-colors duration-200",
         // Cancel the base Button's 1px press-down nudge.
@@ -39,7 +40,7 @@ export function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex items-center gap-1">
+    <ul className="flex items-center sm:gap-1">
       {siteConfig.nav.map((item) => (
         <li key={item.href}>
           <NavLink item={item} active={isActive(pathname, item.href)} />

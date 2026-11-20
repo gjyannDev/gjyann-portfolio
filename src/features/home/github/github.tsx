@@ -77,11 +77,13 @@ export async function GitHubActivity() {
             <ProfileLink>@{profile.handle}</ProfileLink>
           </div>
 
-          {/* Fills the card; scrolls sideways below min width instead of shrinking cells. */}
-          <div className="overflow-x-auto pb-1">
+          {/* Scrolls sideways below min width instead of shrinking cells; rtl
+              starts it scrolled to the newest weeks on narrow screens. */}
+          <div dir="rtl" className="overflow-x-auto pb-1">
             {/* One grid: col 1 = weekday labels, then one column per week; row 1 = months. */}
             <div
               role="img"
+              dir="ltr"
               aria-label={`${calendar.totalContributions} GitHub contributions in the last year`}
               style={{
                 gridTemplateColumns: `auto repeat(${calendar.weeks.length}, minmax(0, 1fr))`,

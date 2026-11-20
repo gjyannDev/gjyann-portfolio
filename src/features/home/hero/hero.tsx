@@ -14,13 +14,13 @@ function initials(name: string) {
 /** Photo if `profile.avatar` is set, otherwise initials on a dotted tile. */
 function Avatar() {
   return (
-    <div className="relative size-24 shrink-0 overflow-hidden rounded-xl border border-line-strong bg-surface sm:size-32">
+    <div className="relative size-24 shrink-0 overflow-hidden rounded-xl border border-line-strong bg-surface min-[360px]:size-28 sm:size-36">
       {profile.avatar ? (
         <Image
           src={profile.avatar}
           alt={profile.name}
           fill
-          sizes="128px"
+          sizes="144px"
           priority
           className="object-cover"
         />
@@ -50,7 +50,8 @@ export async function Hero() {
   return (
     <section className="pb-6">
       <Container className="max-w-4xl">
-        <div className="flex items-center gap-5 sm:gap-6">
+        {/* Smaller avatar + gap under 360px keep the name to two lines. */}
+        <div className="flex items-center gap-4 min-[360px]:gap-5 sm:gap-6">
           <Avatar />
           <div className="min-w-0">
             <h1 className="text-2xl font-semibold text-text sm:text-4xl">

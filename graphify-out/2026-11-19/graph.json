@@ -4,6 +4,19 @@
   "graph": {},
   "nodes": [
     {
+      "id": "src_components_layout_mayon_scene_sceneframe",
+      "label": "SceneFrame",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
+      "file_type": "code",
+      "norm_label": "sceneframe",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L346"
+    },
+    {
       "id": "src_features_home_projects_data_project",
       "label": "Project",
       "_callable": true,
@@ -54,6 +67,58 @@
       "norm_label": "projectsprops",
       "source_file": "src/features/home/projects/projects.tsx",
       "source_location": "L6"
+    },
+    {
+      "id": "src_config_site_navitem",
+      "label": "NavItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "navitem",
+      "source_file": "src/config/site.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_config_site_profile",
+      "label": "profile",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "profile",
+      "source_file": "src/config/site.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "src_config_site_profilelink",
+      "label": "ProfileLink",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "profilelink",
+      "source_file": "src/config/site.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_config_site_siteconfig",
+      "label": "SiteConfig",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "siteconfig",
+      "source_file": "src/config/site.ts",
+      "source_location": "L13"
     },
     {
       "id": "src_features_home_about_about_aboutprops",
@@ -147,78 +212,13 @@
       "source_location": "L93"
     },
     {
-      "id": "src_features_home_hero_moon_scene_sceneframe",
-      "label": "SceneFrame",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "sceneframe",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L258"
-    },
-    {
-      "id": "src_config_site_navitem",
-      "label": "NavItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "navitem",
-      "source_file": "src/config/site.ts",
-      "source_location": "L14"
-    },
-    {
-      "id": "src_config_site_profile",
-      "label": "profile",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "profile",
-      "source_file": "src/config/site.ts",
-      "source_location": "L31"
-    },
-    {
-      "id": "src_config_site_profilelink",
-      "label": "ProfileLink",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "profilelink",
-      "source_file": "src/config/site.ts",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_config_site_siteconfig",
-      "label": "SiteConfig",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "siteconfig",
-      "source_file": "src/config/site.ts",
-      "source_location": "L13"
-    },
-    {
       "id": "src_components_motion_reveal_revealprops",
       "label": "RevealProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "revealprops",
       "source_file": "src/components/motion/reveal.tsx",
@@ -231,7 +231,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "staggerprops",
       "source_file": "src/components/motion/reveal.tsx",
@@ -244,7 +244,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "pageintroprops",
       "source_file": "src/components/sections/page-intro.tsx",
@@ -290,100 +290,100 @@
       "source_location": "L3"
     },
     {
-      "id": "src_components_ui_button_button",
-      "label": "Button()",
+      "id": "src_components_layout_mayon_scene_compile",
+      "label": "compile()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "button()",
-      "source_file": "src/components/ui/button.tsx",
-      "source_location": "L43"
+      "norm_label": "compile()",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L365"
     },
     {
-      "id": "src_components_ui_card_card",
-      "label": "Card()",
+      "id": "src_components_layout_mayon_scene_createmayonscene",
+      "label": "createMayonScene()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "card()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L4"
+      "norm_label": "createmayonscene()",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L379"
     },
     {
-      "id": "src_components_ui_card_cardaction",
-      "label": "CardAction()",
+      "id": "src_components_layout_mayon_scene_moonphase",
+      "label": "moonPhase()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "cardaction()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L58"
+      "norm_label": "moonphase()",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L37"
     },
     {
-      "id": "src_components_ui_card_cardcontent",
-      "label": "CardContent()",
+      "id": "src_components_layout_mayon_scene_tovec4s",
+      "label": "toVec4s()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "cardcontent()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L71"
+      "norm_label": "tovec4s()",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L60"
     },
     {
-      "id": "src_components_ui_card_carddescription",
-      "label": "CardDescription()",
+      "id": "src_components_layout_mayon_sky_layout",
+      "label": "layout()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "carddescription()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L48"
+      "norm_label": "layout()",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L21"
     },
     {
-      "id": "src_components_ui_card_cardfooter",
-      "label": "CardFooter()",
+      "id": "src_components_layout_mayon_sky_mayonsky",
+      "label": "MayonSky()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "cardfooter()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L81"
+      "norm_label": "mayonsky()",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L55"
     },
     {
-      "id": "src_components_ui_card_cardheader",
-      "label": "CardHeader()",
+      "id": "src_components_layout_mayon_sky_noop",
+      "label": "noop()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "cardheader()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L22"
+      "norm_label": "noop()",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L7"
     },
     {
-      "id": "src_components_ui_card_cardtitle",
-      "label": "CardTitle()",
+      "id": "src_components_layout_mayon_sky_usehour",
+      "label": "useHour()",
       "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
+      "community": 14,
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "cardtitle()",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L35"
+      "norm_label": "usehour()",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L10"
     },
     {
       "id": "src_features_home_projects_project_list_badge",
@@ -432,6 +432,90 @@
       "norm_label": "thumb()",
       "source_file": "src/features/home/projects/project-list.tsx",
       "source_location": "L18"
+    },
+    {
+      "id": "src_components_ui_card_card",
+      "label": "Card()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "card()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_components_ui_card_cardaction",
+      "label": "CardAction()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "cardaction()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "src_components_ui_card_cardcontent",
+      "label": "CardContent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "cardcontent()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "src_components_ui_card_carddescription",
+      "label": "CardDescription()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "carddescription()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_components_ui_card_cardfooter",
+      "label": "CardFooter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "cardfooter()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "src_components_ui_card_cardheader",
+      "label": "CardHeader()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "cardheader()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_components_ui_card_cardtitle",
+      "label": "CardTitle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "cardtitle()",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L35"
     },
     {
       "id": "src_app_about_page_aboutpage",
@@ -494,6 +578,30 @@
       "source_location": "L9"
     },
     {
+      "id": "src_features_home_hero_hero_client_localtime",
+      "label": "LocalTime()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "localtime()",
+      "source_file": "src/features/home/hero/hero-client.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "src_features_home_hero_hero_client_subscribeclock",
+      "label": "subscribeClock()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "subscribeclock()",
+      "source_file": "src/features/home/hero/hero-client.tsx",
+      "source_location": "L12"
+    },
+    {
       "id": "src_features_home_hero_hero_info_heroinfo",
       "label": "HeroInfo()",
       "_callable": true,
@@ -530,18 +638,6 @@
       "source_location": "L54"
     },
     {
-      "id": "src_features_home_section_section",
-      "label": "Section()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "about.tsx",
-      "file_type": "code",
-      "norm_label": "section()",
-      "source_file": "src/features/home/section.tsx",
-      "source_location": "L20"
-    },
-    {
       "id": "src_features_home_section_statusdot",
       "label": "StatusDot()",
       "_callable": true,
@@ -552,18 +648,6 @@
       "norm_label": "statusdot()",
       "source_file": "src/features/home/section.tsx",
       "source_location": "L72"
-    },
-    {
-      "id": "src_app_experience_page_experiencepage",
-      "label": "ExperiencePage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "experience.tsx",
-      "file_type": "code",
-      "norm_label": "experiencepage()",
-      "source_file": "src/app/experience/page.tsx",
-      "source_location": "L6"
     },
     {
       "id": "src_features_home_experience_data_companyspan",
@@ -614,6 +698,18 @@
       "source_location": "L120"
     },
     {
+      "id": "src_features_home_experience_data_formatmonths",
+      "label": "formatMonths()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "experience.tsx",
+      "file_type": "code",
+      "norm_label": "formatmonths()",
+      "source_file": "src/features/home/experience/data.ts",
+      "source_location": "L145"
+    },
+    {
       "id": "src_features_home_experience_data_monthsbetween",
       "label": "monthsBetween()",
       "_callable": true,
@@ -638,6 +734,18 @@
       "source_location": "L114"
     },
     {
+      "id": "src_features_home_experience_data_totalexperiencemonths",
+      "label": "totalExperienceMonths()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "experience.tsx",
+      "file_type": "code",
+      "norm_label": "totalexperiencemonths()",
+      "source_file": "src/features/home/experience/data.ts",
+      "source_location": "L138"
+    },
+    {
       "id": "src_features_home_experience_experience_companyitem",
       "label": "CompanyItem()",
       "_callable": true,
@@ -648,18 +756,6 @@
       "norm_label": "companyitem()",
       "source_file": "src/features/home/experience/experience.tsx",
       "source_location": "L44"
-    },
-    {
-      "id": "src_features_home_experience_experience_experience",
-      "label": "Experience()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "experience.tsx",
-      "file_type": "code",
-      "norm_label": "experience()",
-      "source_file": "src/features/home/experience/experience.tsx",
-      "source_location": "L98"
     },
     {
       "id": "src_features_home_experience_experience_roleitem",
@@ -674,191 +770,47 @@
       "source_location": "L14"
     },
     {
-      "id": "src_features_home_experience_data_formatmonths",
-      "label": "formatMonths()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "formatmonths()",
-      "source_file": "src/features/home/experience/data.ts",
-      "source_location": "L145"
-    },
-    {
-      "id": "src_features_home_experience_data_totalexperiencemonths",
-      "label": "totalExperienceMonths()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "totalexperiencemonths()",
-      "source_file": "src/features/home/experience/data.ts",
-      "source_location": "L138"
-    },
-    {
       "id": "src_features_home_hero_hero_avatar",
       "label": "Avatar()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
+      "community": 4,
+      "community_name": "experience.tsx",
       "file_type": "code",
       "norm_label": "avatar()",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_heroscene",
-      "label": "HeroScene()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "heroscene()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L34"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_layout",
-      "label": "layout()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "layout()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_localtime",
-      "label": "LocalTime()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "localtime()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L222"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_noop",
-      "label": "noop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "noop()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_subscribeclock",
-      "label": "subscribeClock()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "subscribeclock()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L216"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_usehour",
-      "label": "useHour()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "usehour()",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L11"
+      "source_location": "L15"
     },
     {
       "id": "src_features_home_hero_hero_hero",
       "label": "Hero()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
+      "community": 4,
+      "community_name": "experience.tsx",
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L46"
+      "source_location": "L45"
     },
     {
       "id": "src_features_home_hero_hero_initials",
       "label": "initials()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
+      "community": 4,
+      "community_name": "experience.tsx",
       "file_type": "code",
       "norm_label": "initials()",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_compile",
-      "label": "compile()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "compile()",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L273"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_createmoonscene",
-      "label": "createMoonScene()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "createmoonscene()",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L287"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_moonphase",
-      "label": "moonPhase()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "moonphase()",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L30"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_tovec4s",
-      "label": "toVec4s()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "tovec4s()",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L69"
+      "source_location": "L7"
     },
     {
       "id": "src_app_layout_rootlayout",
       "label": "RootLayout()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "rootlayout()",
@@ -870,7 +822,7 @@
       "label": "Background()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "background()",
@@ -882,7 +834,7 @@
       "label": "Container()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "container()",
@@ -894,7 +846,7 @@
       "label": "Footer()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "footer()",
@@ -902,12 +854,24 @@
       "source_location": "L4"
     },
     {
+      "id": "src_components_theme_theme_provider_themeprovider",
+      "label": "ThemeProvider()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "layout.tsx",
+      "file_type": "code",
+      "norm_label": "themeprovider()",
+      "source_file": "src/components/theme/theme-provider.tsx",
+      "source_location": "L6"
+    },
+    {
       "id": "src_components_layout_header_header_header",
       "label": "Header()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "header()",
       "source_file": "src/components/layout/header/header.tsx",
@@ -919,7 +883,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "isactive()",
       "source_file": "src/components/layout/header/nav-links.tsx",
@@ -931,7 +895,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "navlink()",
       "source_file": "src/components/layout/header/nav-links.tsx",
@@ -943,23 +907,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "navlinks()",
       "source_file": "src/components/layout/header/nav-links.tsx",
       "source_location": "L38"
     },
     {
-      "id": "src_components_theme_theme_provider_themeprovider",
-      "label": "ThemeProvider()",
+      "id": "src_components_theme_theme_toggle_noop",
+      "label": "noop()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
-      "norm_label": "themeprovider()",
-      "source_file": "src/components/theme/theme-provider.tsx",
-      "source_location": "L6"
+      "norm_label": "noop()",
+      "source_file": "src/components/theme/theme-toggle.tsx",
+      "source_location": "L12"
     },
     {
       "id": "src_components_theme_theme_toggle_themetoggle",
@@ -967,7 +931,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "themetoggle()",
       "source_file": "src/components/theme/theme-toggle.tsx",
@@ -979,11 +943,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "code",
       "norm_label": "toggle()",
       "source_file": "src/components/theme/theme-toggle.tsx",
       "source_location": "L27"
+    },
+    {
+      "id": "src_components_theme_theme_toggle_usemounted",
+      "label": "useMounted()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "usemounted()",
+      "source_file": "src/components/theme/theme-toggle.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_components_ui_button_button",
+      "label": "Button()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "button()",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L43"
     },
     {
       "id": "src_app_not_found_notfound",
@@ -991,7 +979,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "notfound()",
       "source_file": "src/app/not-found.tsx",
@@ -1003,7 +991,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "motionprovider()",
       "source_file": "src/components/motion/motion-provider.tsx",
@@ -1015,7 +1003,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "reveal()",
       "source_file": "src/components/motion/reveal.tsx",
@@ -1027,7 +1015,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "stagger()",
       "source_file": "src/components/motion/reveal.tsx",
@@ -1039,35 +1027,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "pageintro()",
       "source_file": "src/components/sections/page-intro.tsx",
       "source_location": "L11"
-    },
-    {
-      "id": "src_components_theme_theme_toggle_noop",
-      "label": "noop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "theme-toggle.tsx",
-      "file_type": "code",
-      "norm_label": "noop()",
-      "source_file": "src/components/theme/theme-toggle.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_components_theme_theme_toggle_usemounted",
-      "label": "useMounted()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "theme-toggle.tsx",
-      "file_type": "code",
-      "norm_label": "usemounted()",
-      "source_file": "src/components/theme/theme-toggle.tsx",
-      "source_location": "L14"
     },
     {
       "id": "src_lib_motion_stagger",
@@ -1075,11 +1039,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "stagger()",
       "source_file": "src/lib/motion.ts",
       "source_location": "L13"
+    },
+    {
+      "id": "src_app_experience_page_experiencepage",
+      "label": "ExperiencePage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "experiencepage()",
+      "source_file": "src/app/experience/page.tsx",
+      "source_location": "L6"
     },
     {
       "id": "src_app_page_home",
@@ -1104,6 +1080,18 @@
       "norm_label": "projectspage()",
       "source_file": "src/app/projects/page.tsx",
       "source_location": "L7"
+    },
+    {
+      "id": "src_features_home_experience_experience_experience",
+      "label": "Experience()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "experience()",
+      "source_file": "src/features/home/experience/experience.tsx",
+      "source_location": "L98"
     },
     {
       "id": "src_features_home_github_api_getcontributions",
@@ -1178,6 +1166,18 @@
       "source_location": "L13"
     },
     {
+      "id": "src_features_home_section_section",
+      "label": "Section()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "section()",
+      "source_file": "src/features/home/section.tsx",
+      "source_location": "L20"
+    },
+    {
       "id": "eslint_config",
       "label": "eslint.config.mjs",
       "_origin": "ast",
@@ -1209,6 +1209,105 @@
       "norm_label": "package.json",
       "source_file": "package.json",
       "source_location": "L1"
+    },
+    {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "devdependencies",
+      "source_file": "package.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "eslint",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "package_devdependencies_eslint_config_next",
+      "label": "eslint-config-next",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "eslint-config-next",
+      "source_file": "package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "tailwindcss",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss_turbopack",
+      "label": "@tailwindcss/turbopack",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@tailwindcss/turbopack",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react-dom",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "package.json",
+      "source_location": "L33"
     },
     {
       "id": "package_name",
@@ -1299,61 +1398,6 @@
       "source_location": "L3"
     },
     {
-      "id": "src_components_ui_button",
-      "label": "button.tsx",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "button.tsx",
-      "source_file": "src/components/ui/button.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_button_buttonvariants",
-      "label": "buttonVariants",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "buttonvariants",
-      "source_file": "src/components/ui/button.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_components_ui_card",
-      "label": "card.tsx",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "card.tsx",
-      "source_file": "src/components/ui/card.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "ref_class_variance_authority",
-      "label": "class-variance-authority",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "class-variance-authority",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "ref_cn",
-      "label": "cn",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "cn",
-      "source_file": "package.json",
-      "source_location": "L14"
-    },
-    {
       "id": "ref_eslint",
       "label": "eslint",
       "_origin": "ast",
@@ -1385,28 +1429,6 @@
       "norm_label": "@paper-design/shaders-react",
       "source_file": "package.json",
       "source_location": "L12"
-    },
-    {
-      "id": "ref_radix_ui",
-      "label": "radix-ui",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "radix-ui",
-      "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "ref_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L20"
     },
     {
       "id": "ref_shadcn",
@@ -1778,103 +1800,59 @@
       "source_location": "L3"
     },
     {
-      "id": "package_devdependencies",
-      "label": "devDependencies",
+      "id": "src_components_layout_mayon_scene",
+      "label": "mayon-scene.ts",
       "_origin": "ast",
       "community": 14,
-      "community_name": "devDependencies",
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "package.json",
-      "source_location": "L25"
+      "norm_label": "mayon-scene.ts",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L1"
     },
     {
-      "id": "package_devdependencies_eslint",
-      "label": "eslint",
+      "id": "src_components_layout_mayon_scene_known_new_moon",
+      "label": "KNOWN_NEW_MOON",
       "_origin": "ast",
       "community": 14,
-      "community_name": "devDependencies",
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "package.json",
-      "source_location": "L30"
+      "norm_label": "known_new_moon",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L20"
     },
     {
-      "id": "package_devdependencies_eslint_config_next",
-      "label": "eslint-config-next",
+      "id": "src_components_layout_mayon_scene_maria",
+      "label": "MARIA",
       "_origin": "ast",
       "community": 14,
-      "community_name": "devDependencies",
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "eslint-config-next",
-      "source_file": "package.json",
-      "source_location": "L31"
+      "norm_label": "maria",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L48"
     },
     {
-      "id": "package_devdependencies_tailwindcss",
-      "label": "tailwindcss",
+      "id": "src_components_layout_mayon_scene_phase_names",
+      "label": "PHASE_NAMES",
       "_origin": "ast",
       "community": 14,
-      "community_name": "devDependencies",
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "tailwindcss",
-      "source_file": "package.json",
-      "source_location": "L32"
+      "norm_label": "phase_names",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L21"
     },
     {
-      "id": "package_devdependencies_tailwindcss_turbopack",
-      "label": "@tailwindcss/turbopack",
+      "id": "src_components_layout_mayon_sky",
+      "label": "mayon-sky.tsx",
       "_origin": "ast",
       "community": 14,
-      "community_name": "devDependencies",
+      "community_name": "mayon-sky.tsx",
       "file_type": "code",
-      "norm_label": "@tailwindcss/turbopack",
-      "source_file": "package.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "package.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "package_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "package.json",
-      "source_location": "L33"
+      "norm_label": "mayon-sky.tsx",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_features_home_projects_data",
@@ -1954,6 +1932,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_ui_card",
+      "label": "card.tsx",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "code",
+      "norm_label": "card.tsx",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_cn",
+      "label": "cn",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "card.tsx",
+      "file_type": "concept",
+      "norm_label": "cn",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
       "id": "src_app_about_page",
       "label": "about/page.tsx",
       "_origin": "ast",
@@ -1974,6 +1974,17 @@
       "norm_label": "metadata",
       "source_file": "src/app/about/page.tsx",
       "source_location": "L4"
+    },
+    {
+      "id": "src_config_site",
+      "label": "site.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "site.ts",
+      "source_file": "src/config/site.ts",
+      "source_location": "L1"
     },
     {
       "id": "src_features_home_about_about",
@@ -2053,6 +2064,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_features_home_hero_hero_client",
+      "label": "hero-client.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "hero-client.tsx",
+      "source_file": "src/features/home/hero/hero-client.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_features_home_hero_hero_client_timeformat",
+      "label": "timeFormat",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "timeformat",
+      "source_file": "src/features/home/hero/hero-client.tsx",
+      "source_location": "L6"
+    },
+    {
       "id": "src_features_home_hero_hero_info",
       "label": "hero-info.tsx",
       "_origin": "ast",
@@ -2083,6 +2116,17 @@
       "file_type": "code",
       "norm_label": "utils.ts",
       "source_file": "src/lib/utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_types_index",
+      "label": "types/index.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "about.tsx",
+      "file_type": "code",
+      "norm_label": "types/index.ts",
+      "source_file": "src/types/index.ts",
       "source_location": "L1"
     },
     {
@@ -2339,28 +2383,6 @@
       "source_location": "L5"
     },
     {
-      "id": "src_app_experience_page",
-      "label": "experience/page.tsx",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "experience.tsx",
-      "file_type": "code",
-      "norm_label": "experience/page.tsx",
-      "source_file": "src/app/experience/page.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_experience_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "experience.tsx",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "src/app/experience/page.tsx",
-      "source_location": "L4"
-    },
-    {
       "id": "src_features_home_experience_data",
       "label": "experience/data.ts",
       "_origin": "ast",
@@ -2416,14 +2438,25 @@
       "source_location": "L1"
     },
     {
-      "id": "src_features_home_experience_index",
-      "label": "experience/index.ts",
+      "id": "src_features_home_hero_hero",
+      "label": "hero.tsx",
       "_origin": "ast",
       "community": 4,
       "community_name": "experience.tsx",
       "file_type": "code",
-      "norm_label": "experience/index.ts",
-      "source_file": "src/features/home/experience/index.ts",
+      "norm_label": "hero.tsx",
+      "source_file": "src/features/home/hero/hero.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_features_home_hero_index",
+      "label": "hero/index.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "experience.tsx",
+      "file_type": "code",
+      "norm_label": "hero/index.ts",
+      "source_file": "src/features/home/hero/index.ts",
       "source_location": "L1"
     },
     {
@@ -2570,109 +2603,10 @@
       "source_location": "L23"
     },
     {
-      "id": "src_features_home_hero_hero",
-      "label": "hero.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "hero.tsx",
-      "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_features_home_hero_hero_client",
-      "label": "hero-client.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "hero-client.tsx",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_features_home_hero_hero_client_timeformat",
-      "label": "timeFormat",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "timeformat",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L210"
-    },
-    {
-      "id": "src_features_home_hero_index",
-      "label": "hero/index.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "hero/index.ts",
-      "source_file": "src/features/home/hero/index.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene",
-      "label": "moon-scene.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "moon-scene.ts",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_known_new_moon",
-      "label": "KNOWN_NEW_MOON",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "known_new_moon",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L13"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_maria",
-      "label": "MARIA",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "maria",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L41"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_phase_names",
-      "label": "PHASE_NAMES",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "phase_names",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L14"
-    },
-    {
-      "id": "src_features_home_hero_moon_scene_spots",
-      "label": "SPOTS",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "hero.tsx",
-      "file_type": "code",
-      "norm_label": "spots",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L61"
-    },
-    {
       "id": "next_config",
       "label": "next.config.ts",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "next.config.ts",
@@ -2683,7 +2617,7 @@
       "id": "next_config_nextconfig",
       "label": "nextConfig",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "nextconfig",
@@ -2694,7 +2628,7 @@
       "id": "src_app_layout",
       "label": "layout.tsx",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "layout.tsx",
@@ -2705,7 +2639,7 @@
       "id": "src_app_layout_metadata",
       "label": "metadata",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "metadata",
@@ -2716,7 +2650,7 @@
       "id": "src_components_layout_background",
       "label": "background.tsx",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "background.tsx",
@@ -2727,7 +2661,7 @@
       "id": "src_components_layout_container",
       "label": "container.tsx",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "container.tsx",
@@ -2738,7 +2672,7 @@
       "id": "src_components_layout_footer",
       "label": "footer.tsx",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "footer.tsx",
@@ -2746,43 +2680,10 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_layout_header_header",
-      "label": "header.tsx",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "header.tsx",
-      "source_file": "src/components/layout/header/header.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_layout_header_index",
-      "label": "header/index.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "header/index.ts",
-      "source_file": "src/components/layout/header/index.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_layout_header_nav_links",
-      "label": "nav-links.tsx",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "nav-links.tsx",
-      "source_file": "src/components/layout/header/nav-links.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_layout_index",
       "label": "layout/index.ts",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "layout/index.ts",
@@ -2790,43 +2691,10 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_theme_index",
-      "label": "theme/index.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "theme/index.ts",
-      "source_file": "src/components/theme/index.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_theme_theme_provider",
-      "label": "theme-provider.tsx",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "theme-provider.tsx",
-      "source_file": "src/components/theme/theme-provider.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_config_site",
-      "label": "site.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "site.ts",
-      "source_file": "src/config/site.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "src_lib_fonts",
       "label": "fonts.ts",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "fonts.ts",
@@ -2837,7 +2705,7 @@
       "id": "src_lib_fonts_plexmono",
       "label": "plexMono",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "plexmono",
@@ -2848,7 +2716,7 @@
       "id": "src_lib_fonts_plexsans",
       "label": "plexSans",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "code",
       "norm_label": "plexsans",
@@ -2856,21 +2724,10 @@
       "source_location": "L3"
     },
     {
-      "id": "src_types_index",
-      "label": "types/index.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "types/index.ts",
-      "source_file": "src/types/index.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "ref_next",
       "label": "next",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "file_type": "concept",
       "norm_label": "next",
@@ -2878,22 +2735,165 @@
       "source_location": "L17"
     },
     {
+      "id": "src_components_layout_header_header",
+      "label": "header.tsx",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "header.tsx",
+      "source_file": "src/components/layout/header/header.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_layout_header_index",
+      "label": "header/index.ts",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "header/index.ts",
+      "source_file": "src/components/layout/header/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_layout_header_nav_links",
+      "label": "nav-links.tsx",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "nav-links.tsx",
+      "source_file": "src/components/layout/header/nav-links.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_theme_index",
+      "label": "theme/index.ts",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "theme/index.ts",
+      "source_file": "src/components/theme/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_theme_theme_provider",
+      "label": "theme-provider.tsx",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "theme-provider.tsx",
+      "source_file": "src/components/theme/theme-provider.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_theme_theme_toggle",
+      "label": "theme-toggle.tsx",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "theme-toggle.tsx",
+      "source_file": "src/components/theme/theme-toggle.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_button",
+      "label": "button.tsx",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "button.tsx",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_button_buttonvariants",
+      "label": "buttonVariants",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "code",
+      "norm_label": "buttonvariants",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "ref_class_variance_authority",
+      "label": "class-variance-authority",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "concept",
+      "norm_label": "class-variance-authority",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "package.json",
+      "source_location": "L15"
+    },
+    {
       "id": "ref_next_themes",
       "label": "next-themes",
       "_origin": "ast",
       "community": 7,
-      "community_name": "layout.tsx",
+      "community_name": "theme-toggle.tsx",
       "file_type": "concept",
       "norm_label": "next-themes",
       "source_file": "package.json",
       "source_location": "L18"
     },
     {
+      "id": "ref_radix_ui",
+      "label": "radix-ui",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "concept",
+      "norm_label": "radix-ui",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "theme-toggle.tsx",
+      "file_type": "concept",
+      "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L21"
+    },
+    {
       "id": "src_app_not_found",
       "label": "not-found.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "not-found.tsx",
       "source_file": "src/app/not-found.tsx",
@@ -2904,7 +2904,7 @@
       "label": "motion/index.ts",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "motion/index.ts",
       "source_file": "src/components/motion/index.ts",
@@ -2915,7 +2915,7 @@
       "label": "motion-provider.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "motion-provider.tsx",
       "source_file": "src/components/motion/motion-provider.tsx",
@@ -2926,7 +2926,7 @@
       "label": "reveal.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "reveal.tsx",
       "source_file": "src/components/motion/reveal.tsx",
@@ -2937,7 +2937,7 @@
       "label": "sections/index.ts",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "sections/index.ts",
       "source_file": "src/components/sections/index.ts",
@@ -2948,21 +2948,10 @@
       "label": "page-intro.tsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "page-intro.tsx",
       "source_file": "src/components/sections/page-intro.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_theme_theme_toggle",
-      "label": "theme-toggle.tsx",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "theme-toggle.tsx",
-      "file_type": "code",
-      "norm_label": "theme-toggle.tsx",
-      "source_file": "src/components/theme/theme-toggle.tsx",
       "source_location": "L1"
     },
     {
@@ -2970,7 +2959,7 @@
       "label": "motion.ts",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "motion.ts",
       "source_file": "src/lib/motion.ts",
@@ -2981,7 +2970,7 @@
       "label": "ease",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "ease",
       "source_file": "src/lib/motion.ts",
@@ -2992,7 +2981,7 @@
       "label": "fadeUp",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "fadeup",
       "source_file": "src/lib/motion.ts",
@@ -3003,44 +2992,44 @@
       "label": "transition",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "code",
       "norm_label": "transition",
       "source_file": "src/lib/motion.ts",
       "source_location": "L6"
     },
     {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "theme-toggle.tsx",
-      "file_type": "concept",
-      "norm_label": "lucide-react",
-      "source_file": "package.json",
-      "source_location": "L15"
-    },
-    {
       "id": "ref_motion",
       "label": "motion",
       "_origin": "ast",
       "community": 8,
-      "community_name": "theme-toggle.tsx",
+      "community_name": "reveal.tsx",
       "file_type": "concept",
       "norm_label": "motion",
       "source_file": "package.json",
       "source_location": "L16"
     },
     {
-      "id": "ref_react_dom",
-      "label": "react-dom",
+      "id": "src_app_experience_page",
+      "label": "experience/page.tsx",
       "_origin": "ast",
-      "community": 8,
-      "community_name": "theme-toggle.tsx",
-      "file_type": "concept",
-      "norm_label": "react-dom",
-      "source_file": "package.json",
-      "source_location": "L21"
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "experience/page.tsx",
+      "source_file": "src/app/experience/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_experience_page_metadata",
+      "label": "metadata",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "metadata",
+      "source_file": "src/app/experience/page.tsx",
+      "source_location": "L4"
     },
     {
       "id": "src_app_page",
@@ -3074,6 +3063,17 @@
       "norm_label": "metadata",
       "source_file": "src/app/projects/page.tsx",
       "source_location": "L5"
+    },
+    {
+      "id": "src_features_home_experience_index",
+      "label": "experience/index.ts",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "github.tsx",
+      "file_type": "code",
+      "norm_label": "experience/index.ts",
+      "source_file": "src/features/home/experience/index.ts",
+      "source_location": "L1"
     },
     {
       "id": "src_features_home_github_api",
@@ -3192,7 +3192,7 @@
       "id": "src_app_globals",
       "label": "src_app_globals",
       "_origin": "semantic",
-      "community": 7,
+      "community": 6,
       "community_name": "layout.tsx",
       "external": true,
       "file_type": "concept",
@@ -3211,7 +3211,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/about/page.tsx",
-      "source_location": "L9",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -3223,7 +3223,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/experience/page.tsx",
-      "source_location": "L9",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -3276,7 +3276,7 @@
     },
     {
       "source": "src_app_layout_rootlayout",
-      "target": "src_components_layout_footer_footer",
+      "target": "src_components_layout_mayon_sky_mayonsky",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3284,6 +3284,18 @@
       "context": "call",
       "source_file": "src/app/layout.tsx",
       "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout_rootlayout",
+      "target": "src_components_layout_footer_footer",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -3452,6 +3464,78 @@
       "context": "call",
       "source_file": "src/components/layout/header/nav-links.tsx",
       "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene_createmayonscene",
+      "target": "src_components_layout_mayon_scene_compile",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L389",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene_createmayonscene",
+      "target": "src_components_layout_mayon_scene_tovec4s",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L429",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky_mayonsky",
+      "target": "src_components_layout_mayon_sky_layout",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky_mayonsky",
+      "target": "src_components_layout_mayon_sky_usehour",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky_mayonsky",
+      "target": "src_components_layout_mayon_scene_moonphase",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky_mayonsky",
+      "target": "src_components_layout_mayon_scene_createmayonscene",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -3847,55 +3931,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L38",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client_heroscene",
-      "target": "src_features_home_hero_hero_client_layout",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L101",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client_heroscene",
-      "target": "src_features_home_hero_hero_client_usehour",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client_heroscene",
-      "target": "src_features_home_hero_moon_scene_moonphase",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L42",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client_heroscene",
-      "target": "src_features_home_hero_moon_scene_createmoonscene",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L63",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -3907,7 +3943,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L49",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -3919,19 +3955,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_hero",
-      "target": "src_features_home_hero_hero_client_heroscene",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L53",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -3943,7 +3967,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L55",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -3955,7 +3979,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L57",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -3967,7 +3991,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L75",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -4016,30 +4040,6 @@
       "context": "call",
       "source_file": "src/features/home/hero/hero-info.tsx",
       "source_location": "L48",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene_createmoonscene",
-      "target": "src_features_home_hero_moon_scene_compile",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L297",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene_createmoonscene",
-      "target": "src_features_home_hero_moon_scene_tovec4s",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L336",
       "weight": 1.0
     },
     {
@@ -4184,6 +4184,18 @@
       "context": "export",
       "source_file": "src/components/layout/index.ts",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_index",
+      "target": "src_components_layout_mayon_sky",
+      "relation": "re_exports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "export",
+      "source_file": "src/components/layout/index.ts",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -4669,6 +4681,18 @@
     },
     {
       "source": "src_app_layout",
+      "target": "src_components_layout_mayon_sky_mayonsky",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout",
       "target": "src_components_motion_motion_provider_motionprovider",
       "relation": "imports",
       "_origin": "ast",
@@ -4893,6 +4917,30 @@
       "context": "import",
       "source_file": "src/components/layout/header/nav-links.tsx",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_scene_createmayonscene",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_scene_moonphase",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -5341,18 +5389,6 @@
     },
     {
       "source": "src_features_home_hero_hero",
-      "target": "src_features_home_hero_hero_client_heroscene",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero",
       "target": "src_features_home_hero_hero_info_heroinfo",
       "relation": "imports",
       "_origin": "ast",
@@ -5360,7 +5396,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -5372,31 +5408,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_moon_scene_createmoonscene",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_moon_scene_moonphase",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L6",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -6029,6 +6041,42 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_layout_mayon_sky",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "ref_next_themes",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_scene",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_motion_motion_provider",
       "target": "ref_motion",
       "relation": "imports_from",
@@ -6498,18 +6546,6 @@
     },
     {
       "source": "src_features_home_hero_hero",
-      "target": "src_features_home_hero_hero_client",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero",
       "target": "src_features_home_hero_hero_info",
       "relation": "imports_from",
       "_origin": "ast",
@@ -6517,7 +6553,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -6534,18 +6570,6 @@
     },
     {
       "source": "src_features_home_hero_hero_client",
-      "target": "ref_next_themes",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
       "target": "src_config_site",
       "relation": "imports_from",
       "_origin": "ast",
@@ -6553,19 +6577,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_moon_scene",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L6",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -6843,6 +6855,18 @@
       "context": "re-export",
       "source_file": "src/components/layout/index.ts",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_index",
+      "target": "src_components_layout_mayon_sky_mayonsky",
+      "relation": "re_exports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "re-export",
+      "source_file": "src/components/layout/index.ts",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7805,6 +7829,138 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_known_new_moon",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_phase_names",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_sceneframe",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L346",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_compile",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L365",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_moonphase",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_createmayonscene",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L379",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_maria",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_scene",
+      "target": "src_components_layout_mayon_scene_tovec4s",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-scene.ts",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_sky_usehour",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_sky_layout",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_sky_mayonsky",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_mayon_sky",
+      "target": "src_components_layout_mayon_sky_noop",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_motion_motion_provider",
       "target": "src_components_motion_motion_provider_motionprovider",
       "relation": "contains",
@@ -8494,7 +8650,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L16",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -8505,7 +8661,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L46",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -8516,29 +8672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_hero_client_usehour",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_hero_client_timeformat",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L210",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -8549,18 +8683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L216",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_hero_client_layout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L22",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -8571,29 +8694,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L222",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
       "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_hero_client_heroscene",
+      "target": "src_features_home_hero_hero_client_timeformat",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client",
-      "target": "src_features_home_hero_hero_client_noop",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L8",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -8616,105 +8728,6 @@
       "confidence_score": 1.0,
       "source_file": "src/features/home/hero/hero-info.tsx",
       "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_known_new_moon",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_phase_names",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_sceneframe",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L258",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_compile",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L273",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_createmoonscene",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L287",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_moonphase",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_maria",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_spots",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L61",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_moon_scene",
-      "target": "src_features_home_hero_moon_scene_tovec4s",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/features/home/hero/moon-scene.ts",
-      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -9180,6 +9193,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_layout_mayon_sky_usehour",
+      "target": "src_components_layout_mayon_sky_noop",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/layout/mayon-sky.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_theme_theme_toggle_usemounted",
       "target": "src_components_theme_theme_toggle_noop",
       "relation": "indirect_call",
@@ -9200,22 +9225,10 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L225",
-      "weight": 1.0
-    },
-    {
-      "source": "src_features_home_hero_hero_client_usehour",
-      "target": "src_features_home_hero_hero_client_noop",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "src/features/home/hero/hero-client.tsx",
-      "source_location": "L13",
+      "source_location": "L21",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3fc65910605a04bf63da4d96896c2f4fa778aed0"
+  "built_at_commit": "fd7a54b277370d48122c8169a31ce0b147cb0669"
 }

@@ -1,6 +1,9 @@
 /**
- * Hero sky: a dithered moon with real near-side maria, a soft halo, drifting
- * cloud bands and blinking stars, all drawn by one WebGL fragment shader.
+ * Hero sky in dithered dots, drawn by one WebGL fragment shader.
+ * - Dark theme: a moon with real near-side maria in today's phase, a soft
+ *   halo and blinking stars.
+ * - Light theme: an ink-sketch sun with thin rays that slowly turn.
+ * Both: drifting cloud bands and the odd shooting star.
  *
  * Each canvas pixel is one dither cell (~2 CSS px), upscaled with
  * `image-rendering: pixelated`, so the shader runs on a tiny grid and every
@@ -94,12 +97,13 @@ precision mediump float;
 
 #define MARIA ${MARIA.length}
 #define SPOTS ${SPOTS.length}
+#define TAU 6.2831853
 
 uniform vec2 u_res;      // canvas size in cells
 uniform float u_time;    // seconds
 uniform float u_ink;     // gray level of the dots
 uniform float u_dark;    // 1 = dark theme (halo, glow, stars), 0 = light
-uniform vec3 u_moon;     // moon center x, y (cells, y down) and radius (cells), with parallax
+uniform vec3 u_moon;     // moon (or sun) center x, y (cells, y down) and radius (cells), with parallax
 uniform vec2 u_anchor;   // moon center y and radius without parallax (cloud bands hang off it)
 uniform vec2 u_phase;    // phase (0 new, .5 full), lit fraction
 uniform vec2 u_lib;      // libration (lon, lat) in radians
@@ -150,6 +154,30 @@ float band(float y, float center, float width) {
   return exp(-d * d);
 }
 
+// Shooting star for one slot: each period it may fire once (some cycles are
+// skipped), starting in the upper sky beside the moon and streaking down and
+// away from it. Returns the streak's strength at p.
+float meteor(vec2 p, float t, float slot) {
+  float period = 5. + 3.5 * slot;
+  float ct = t / period + .37 * slot;
+  vec2 id = vec2(floor(ct), slot);
+  float s = fract(ct) * period / .9; // progress through a 0.9 s flight
+  if (s > 1. || hash(id + 19.1) < .35) return 0.;
+
+  float h1 = hash(id + .13), h2 = hash(id + 7.7);
+  float side = h1 < .5 ? -1. : 1.;
+  vec2 dir = normalize(vec2(side, .35 + .3 * h2));
+  vec2 start = vec2(u_moon.x + side * (1.5 * u_moon.z + .25 * h2 * u_res.x),
+                    u_res.y * (.06 + .26 * fract(h1 * 13.)));
+  vec2 v = start + dir * 150. * s - p; // head minus pixel, in cells
+  float behind = dot(v, dir);
+  float across = abs(dot(v, vec2(-dir.y, dir.x)));
+  float len = 44. * min(1., s * 3.); // the tail grows in, then holds
+  float tail = step(0., behind) * max(0., 1. - behind / len) * step(across, .75);
+  float head = exp(-dot(v, v) * .6);
+  return max(tail, head) * smoothstep(0., .1, s) * (1. - smoothstep(.65, 1., s));
+}
+
 void main() {
   vec2 p = vec2(gl_FragCoord.x, u_res.y - gl_FragCoord.y);
   vec2 uv = p / u_res;
@@ -186,7 +214,7 @@ void main() {
   float onDisc = step(r2, 1.);
   float moon = 0.;
 
-  if (r2 < 1.) {
+  if (r2 < 1. && u_dark > .5) {
     vec3 n = vec3(q, sqrt(1. - r2));
 
     // Libration: tip the globe a few degrees so the maria slowly sway.
@@ -220,7 +248,7 @@ void main() {
 
     // Sunlight from today's phase: a crisp terminator, then a gentle
     // Lommel–Seeliger falloff so the limb stays bright and gibbous reads as gibbous.
-    float ph = u_phase.x * 6.2831853;
+    float ph = u_phase.x * TAU;
     vec3 L = vec3(sin(ph), 0., -cos(ph));
     float mu0 = dot(n, L);
     float ls = 2. * max(mu0, 0.) / (max(mu0, 0.) + max(n.z, .05));
@@ -241,13 +269,27 @@ void main() {
   float a = step(th, far * .5) * .2;
   a = max(a, step(th, halo) * .45);
   a = max(a, star * .7);
-  // On the disc: the moon, dimmed where a near cloud passes in front of it.
-  // Light theme draws it like an ink sketch instead of a negative: sparse
-  // stipple on the lit highlands, denser maria, densest shadow side.
-  float tone = mix(.12 + .7 * (1. - moon), moon, u_dark);
-  float onMoon = max(step(th, tone * (1. - .6 * near)), step(th, near * .45) * .35);
-  a = mix(a, onMoon, onDisc);
+  // On the disc: the moon (night), dimmed where a near cloud passes in front.
+  if (u_dark > .5) {
+    float onMoon = max(step(th, moon * (1. - .6 * near)), step(th, near * .45) * .35);
+    a = mix(a, onMoon, onDisc);
+  } else {
+    // Sun (day): an ink outline, a faint dotted fill and twelve thin rays
+    // (kept ~2 cells wide at any size) turning slowly; near clouds pass in front.
+    float sr = u_moon.z;
+    float ring = 1. - smoothstep(.5, 1.1, abs(rr - 1.) * sr);
+    float seg = fract(atan(q.y, q.x) / TAU * 12. + t * .02);
+    float ray = step(min(seg, 1. - seg) * TAU * rr * sr / 12., 1.2)
+      * step(1.35, rr) * step(rr, 1.8);
+    float sun = max(max(ring, .9 * ray), .07 * onDisc);
+    a = max(a * (1. - onDisc), step(th, sun * (1. - .6 * near)));
+    a = max(a, step(th, near * .45) * .35 * onDisc);
+  }
   a = max(a, step(th, near * .5) * .3 * (1. - onDisc));
+  // Shooting stars, off the disc: bright at night, ink streaks by day.
+  float met = 0.;
+  for (int i = 0; i < 2; i++) met = max(met, meteor(p, t, float(i)));
+  a = max(a, step(th, met * sky * (1. - onDisc)) * mix(.5, .85, u_dark));
   a = max(a, glow);
   gl_FragColor = vec4(vec3(u_ink) * a, a);
 }

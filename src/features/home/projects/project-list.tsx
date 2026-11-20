@@ -14,10 +14,18 @@ import {
 type Filter = "all" | ProjectType;
 const FILTERS: Filter[] = ["all", ...PROJECT_TYPES];
 
-/** Preview image, or a dotted placeholder tile with skeleton bars. */
+/**
+ * Preview image, or a dotted placeholder tile with skeleton bars. The
+ * placeholder only fills the side column, so phones skip it.
+ */
 function Thumb({ project }: { project: Project }) {
   return (
-    <div className="relative aspect-16/10 overflow-hidden rounded-lg border border-line bg-surface">
+    <div
+      className={cn(
+        "relative aspect-16/10 overflow-hidden rounded-lg border border-line bg-surface",
+        !project.image && "hidden sm:block",
+      )}
+    >
       {project.image ? (
         <Image
           src={project.image}
@@ -121,7 +129,7 @@ export function ProjectList({ limit }: { limit?: number }) {
 
   return (
     <>
-      <div role="group" aria-label="Filter projects" className="flex gap-2">
+      <div role="group" aria-label="Filter projects" className="flex flex-wrap gap-2">
         {FILTERS.map((f) => (
           <button
             key={f}

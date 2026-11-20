@@ -58,17 +58,17 @@ function CompanyItem({
   ].filter(Boolean);
 
   return (
-    <li className="grid grid-cols-[2.5rem_1fr] gap-x-4 sm:gap-x-5">
+    <li className="grid grid-cols-[2rem_1fr] gap-x-3 sm:grid-cols-[2.5rem_1fr] sm:gap-x-5">
       {/* Badge + connecting line down to the next company. */}
       <div className="flex flex-col items-center">
-        <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-line bg-surface font-mono text-xs text-muted">
+        <span className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-line bg-surface font-mono text-[10px] text-muted sm:size-10 sm:text-xs">
           {company.badge}
         </span>
         {!last && <span aria-hidden className="mt-2 w-px flex-1 bg-line" />}
       </div>
 
       <div className={cn("min-w-0", !last && "pb-10")}>
-        <h3 className="text-lg font-semibold leading-10 text-text">
+        <h3 className="text-lg font-semibold leading-8 text-text sm:leading-10">
           {company.name}
         </h3>
         <p className="-mt-1 text-sm text-muted">{meta.join(" · ")}</p>

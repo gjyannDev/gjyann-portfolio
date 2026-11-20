@@ -31,6 +31,7 @@ export type Profile = {
 export const profile: Profile = {
   name: "Mark Ghian Francis",
   handle: "gjyannDev",
+  avatar: "/image/avatar_profile.png",
   tags: ["full-stack", "ai-engineer"],
   location: "Philippines",
   timeZone: { id: "Asia/Manila", label: "UTC+8" },
