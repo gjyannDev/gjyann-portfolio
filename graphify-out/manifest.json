@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1795135947.0225732,
-    "seen": 1795136009.9657059,
-    "ast_hash": "ba6e28ce82b4485a5cbe97a8d0b0eca9",
+    "mtime": 1795147021.5154853,
+    "seen": 1795147035.4548433,
+    "ast_hash": "4a4c421a90f1ec57ca886d263b8ae33c",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
@@ -399,6 +399,12 @@
     "mtime": 1795141043.4460871,
     "seen": 1795141191.592696,
     "ast_hash": "a2ac4427950c06b7a3de47691717c50c",
+    "semantic_hash": ""
+  },
+  "public/image/web-icon.svg": {
+    "mtime": 1795146955.7922885,
+    "seen": 1795147035.4549584,
+    "ast_hash": "2f80ab6c57db1830dba96e0b2e381aa9",
     "semantic_hash": ""
   }
 }

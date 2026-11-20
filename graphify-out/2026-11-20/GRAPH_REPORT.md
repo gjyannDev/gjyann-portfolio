@@ -1,7 +1,7 @@
 # Graph Report - gjyann-portfolio  (2026-11-20)
 
 ## Corpus Check
-- 58 files · ~167,270 words
+- 58 files · ~167,362 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 2, .css 1)
 

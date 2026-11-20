@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/theme";
 export const metadata: Metadata = {
   title: { default: siteConfig.title, template: `%s — ${siteConfig.name}` },
   description: siteConfig.description,
+  icons: { icon: { url: "/image/web-icon.svg", type: "image/svg+xml" } },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

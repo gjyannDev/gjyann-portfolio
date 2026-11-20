@@ -971,7 +971,7 @@
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "src_app_not_found_notfound",
@@ -3246,7 +3246,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -3258,7 +3258,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -3270,7 +3270,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -3282,7 +3282,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -3294,7 +3294,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -3306,7 +3306,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -7715,7 +7715,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -9252,5 +9252,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fd7a54b277370d48122c8169a31ce0b147cb0669"
+  "built_at_commit": "2d02017063fc42b98e63543a69e60c25e3a9509d"
 }
