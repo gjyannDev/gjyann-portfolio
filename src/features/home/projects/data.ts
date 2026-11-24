@@ -22,6 +22,7 @@ export const projects: Project[] = [
     title: "Cuewise – AI Mock Interviewer",
     year: 2026,
     type: "personal",
+    image: "/image/cuewise_image.png",
     summary:
       "A voice-enabled AI mock interviewer that uses RAG to run resume-aware interviews tailored to a target job, with Deepgram speech-to-text and text-to-speech and Langfuse for LLM evaluation and tracing.",
     stack: [
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     year: 2026,
     type: "company",
     featured: true,
+    image: "/image/moonbreak_web_image.png",
     summary:
       "The Moonbreak web platform, an AI-powered CRM where an AI agent handles everyday sales work: AI-assisted calls, AI chat over customer data, quotation generation, and contact and deal management, with Langfuse tracing to monitor agent behavior.",
     stack: [
@@ -60,6 +62,7 @@ export const projects: Project[] = [
     title: "Moonbreak – AI Powered CRM (Mobile)",
     year: 2026,
     type: "company",
+    image: "/image/moonbreak_app_image.png",
     summary:
       "The Moonbreak mobile app, built end to end in React Native, bringing the CRM's AI agent chat to iOS and Android with RevenueCat in-app payments and builds shipped to TestFlight and Google Play.",
     stack: ["React Native", "Expo", "RevenueCat", "AI Agents", "Langfuse"],
@@ -69,6 +72,7 @@ export const projects: Project[] = [
     title: "MTG Rider Mobile Application",
     year: 2025,
     type: "academic",
+    image: "/image/mtg_app_image.png",
     summary:
       "A mobile app for delivery riders to scan orders, view assigned deliveries and manage order status on the go.",
     stack: [
@@ -85,6 +89,7 @@ export const projects: Project[] = [
     title: "Full-Stack Meal Plan E-commerce Platform",
     year: 2025,
     type: "academic",
+    image: "/image/mtg_web_image.png",
     summary:
       "A meal plan ordering platform with a customer storefront and an admin dashboard for managing subscriptions, orders, inventory and rider tracking, with payments through PayMongo.",
     stack: [
@@ -108,6 +113,7 @@ export const projects: Project[] = [
     title: "ReliefX – Volunteer Management System UI/UX Design",
     year: 2025,
     type: "personal",
+    image: "/image/reliefx_image.png",
     summary:
       "A UI/UX design for a volunteer management system, built in Figma, where I sharpened my skills in user flows, wireframing, prototyping and interface design.",
     stack: ["Figma", "UI/UX Design", "Prototyping"],

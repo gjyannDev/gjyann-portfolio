@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Dialog } from "radix-ui";
+import { Maximize2, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Chip } from "../chip";
 import {
@@ -14,27 +16,69 @@ import {
 type Filter = "all" | ProjectType;
 const FILTERS: Filter[] = ["all", ...PROJECT_TYPES];
 
+const thumbBox =
+  "relative aspect-16/10 overflow-hidden rounded-lg border border-line bg-surface";
+
 /**
- * Preview image, or a dotted placeholder tile with skeleton bars. The
- * placeholder only fills the side column, so phones skip it.
+ * Thumbnail that opens the full image in a lightbox (Esc, backdrop or a click
+ * closes it). Without an image it's a dotted placeholder that phones skip.
  */
 function Thumb({ project }: { project: Project }) {
+  if (project.image) {
+    return (
+      <Dialog.Root>
+        <Dialog.Trigger
+          aria-label={`View ${project.title} preview full size`}
+          className={cn(
+            thumbBox,
+            "group block w-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand/40",
+          )}
+        >
+          <Image
+            src={project.image}
+            alt={`${project.title} preview`}
+            fill
+            sizes="(min-width: 768px) 22rem, (min-width: 640px) 17rem, 100vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          />
+          <span className="absolute right-2 bottom-2 flex items-center gap-1 rounded-md bg-black/60 px-2 py-1 font-mono text-[11px] text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
+            <Maximize2 aria-hidden className="size-3" /> view
+          </span>
+        </Dialog.Trigger>
+        <Dialog.Portal>
+          <Dialog.Overlay className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm" />
+          <Dialog.Content
+            aria-describedby={undefined}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8"
+          >
+            <Dialog.Title className="sr-only">{project.title}</Dialog.Title>
+            <Dialog.Close
+              aria-label="Close preview"
+              className="relative h-full w-full max-w-6xl cursor-zoom-out"
+            >
+              <Image
+                src={project.image}
+                alt={`${project.title} preview`}
+                fill
+                sizes="(min-width: 1152px) 72rem, 100vw"
+                className="object-contain"
+              />
+            </Dialog.Close>
+            <Dialog.Close
+              aria-label="Close preview"
+              className="absolute top-4 right-4 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-white/60"
+            >
+              <X aria-hidden className="size-5" />
+            </Dialog.Close>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
+    );
+  }
+
   return (
-    <div
-      className={cn(
-        "relative aspect-16/10 overflow-hidden rounded-lg border border-line bg-surface",
-        !project.image && "hidden sm:block",
-      )}
-    >
-      {project.image ? (
-        <Image
-          src={project.image}
-          alt={`${project.title} preview`}
-          fill
-          sizes="(min-width: 768px) 18rem, (min-width: 640px) 15rem, 100vw"
-          className="object-cover"
-        />
-      ) : (
+    <div className={cn(thumbBox, "hidden sm:block")}>
+      {(
         <div aria-hidden className="absolute inset-0 p-3">
           <div className="absolute inset-0 bg-[radial-gradient(var(--dot-color)_1px,transparent_1px)] bg-size-[6px_6px]" />
           <div className="relative space-y-2">
@@ -72,7 +116,7 @@ function Badge({
 
 function Row({ project, number }: { project: Project; number: number }) {
   return (
-    <li className="grid gap-4 border-b border-line py-7 sm:grid-cols-[3.5rem_1fr_15rem] sm:gap-6 md:grid-cols-[3.5rem_1fr_18rem]">
+    <li className="grid gap-4 border-b border-line py-7 sm:grid-cols-[3.5rem_1fr_17rem] sm:gap-6 md:grid-cols-[3.5rem_1fr_22rem]">
       <div className="flex gap-3 font-mono text-xs text-subtle sm:flex-col sm:gap-1">
         <span>{String(number).padStart(2, "0")}</span>
         <span>{project.year}</span>
